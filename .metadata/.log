@@ -5048,3 +5048,1072 @@ Contains: Could not delete: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team600
 !MESSAGE Could not delete: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\bin\org\usfirst.
 !SUBENTRY 5 org.eclipse.core.filesystem 4 273 2016-02-07 08:15:24.754
 !MESSAGE Could not delete: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\bin\org.
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:17:38.878
+!MESSAGE Project: Team6000-2016 Package: org.usfirst.frc.team6000.robot Project Type: edu.wpi.first.wpilib.plugins.java.wizards.newproject.JavaProjectType$3@258a435c
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:18:01.511
+!MESSAGE [org.usfirst.frc.team6000.robot.subsystems [in src [in Team6000-2016]]
+  ExampleSubsystem.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ExampleSubsystem
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:18:01.511
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:18:01.524
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:18:01.525
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:18:08.958
+!MESSAGE Class: DriveTrain Package: org.usfirst.frc.team6000.robot.subsystems
+!SESSION 2016-02-07 08:26:20.065 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -data C:\Users\Owner\Documents\GitHub\FRC6000-2016 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.ui.intro 4 0 2016-02-07 08:26:29.505
+!MESSAGE C:\Users\Owner\Downloads\eclipse-cpp-mars-1-win32-x86_64\eclipse\WPILib Intro\sample.xml (The system cannot find the path specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Owner\Downloads\eclipse-cpp-mars-1-win32-x86_64\eclipse\WPILib Intro\sample.xml (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.ui.internal.intro.impl.model.loader.IntroContentParser.parse(IntroContentParser.java:94)
+	at org.eclipse.ui.internal.intro.impl.model.loader.IntroContentParser.<init>(IntroContentParser.java:56)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.loadDOM(IntroModelRoot.java:885)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.processConfigExtension(IntroModelRoot.java:411)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.resolveConfigExtensions(IntroModelRoot.java:381)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.resolveChildren(IntroModelRoot.java:242)
+	at org.eclipse.ui.internal.intro.impl.model.AbstractIntroContainer.getChildren(AbstractIntroContainer.java:86)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.loadModel(IntroModelRoot.java:164)
+	at org.eclipse.ui.internal.intro.impl.model.loader.BaseExtensionPointManager.loadModel(BaseExtensionPointManager.java:95)
+	at org.eclipse.ui.internal.intro.impl.model.loader.ExtensionPointManager.loadCurrentModel(ExtensionPointManager.java:61)
+	at org.eclipse.ui.internal.intro.impl.model.loader.ExtensionPointManager.getCurrentModel(ExtensionPointManager.java:73)
+	at org.eclipse.ui.intro.config.CustomizableIntroPart.init(CustomizableIntroPart.java:154)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.init(ViewIntroAdapterPart.java:202)
+	at org.eclipse.ui.internal.ViewReference.initialize(ViewReference.java:126)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:319)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:879)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:525)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:509)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-07 08:26:31.170
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Owner'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-07 08:26:31.449
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-07 08:26:31.452
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-07 08:26:31.454
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-07 08:26:31.455
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:51:54.898
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  [Working copy] ExampleCommand.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import org.usfirst.frc.team6000.robot.Robot
+    class ExampleCommand
+      ExampleCommand()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:51:54.898
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:51:54.956
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:51:54.958
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 08:52:12.013
+!MESSAGE Class: DriveWithJoysticks Package: org.usfirst.frc.team6000.robot.commands
+!SESSION 2016-02-07 09:25:12.858 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -data C:\Users\Owner\Documents\GitHub\FRC6000-2016 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-07 09:25:21.664
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Owner'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-07 09:25:21.953
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-07 09:25:21.962
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-07 09:25:21.963
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-07 09:25:21.964
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 09:54:29.151
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 09:54:29.153
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:05:38.408
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:05:38.410
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:08:40.621
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:08:40.623
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:20:56.263
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:20:56.264
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:23:55.901
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:23:55.903
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:28:57.522
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:28:57.525
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:33:42.616
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:33:42.617
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:36:00.895
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:36:00.895
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:38:48.536
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:38:48.538
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-07 10:38:58.130
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:94)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:39:13.212
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:39:13.213
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:40:29.686
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:40:29.687
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:58:32.207
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 10:58:32.208
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:00:18.836
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:00:18.836
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:01:44.905
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  [Working copy] DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:01:44.905
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:01:44.920
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:01:44.921
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:01:53.110
+!MESSAGE Class: DriveInverted Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:05:07.929
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:05:07.929
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:08:40.214
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:08:40.214
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:19:24.222
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:19:24.222
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:21:48.870
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:21:48.870
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:26:49.813
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:26:49.813
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:32:15.993
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:32:15.994
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:33:59.520
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:33:59.520
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:15.569
+!MESSAGE [org.usfirst.frc.team6000.robot.subsystems [in src [in Team6000-2016]]
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks
+    class DriveTrain
+      Victor makeInverted(Victor)
+      RobotDrive robotDrive
+      void drive()
+      void driveInverted()
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:15.570
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:15.579
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:15.580
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:20.378
+!MESSAGE Class: Shooter Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:38.929
+!MESSAGE [org.usfirst.frc.team6000.robot.subsystems [in src [in Team6000-2016]]
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks
+    class DriveTrain
+      Victor makeInverted(Victor)
+      RobotDrive robotDrive
+      void drive()
+      void driveInverted()
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:38.929
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:38.940
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:38.940
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:36:43.121
+!MESSAGE Class: Shooter Package: org.usfirst.frc.team6000.robot.subsystems
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:43:58.448
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  [Working copy] DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] DriveInverted.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class DriveInverted
+      DriveInverted()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:43:58.448
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:43:58.457
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:43:58.458
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:44:02.053
+!MESSAGE Class: Intake Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:44:08.641
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  [Working copy] DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] DriveInverted.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class DriveInverted
+      DriveInverted()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Intake.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class Intake
+      Intake()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:44:08.642
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:44:08.651
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:44:08.653
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:45:04.191
+!MESSAGE Class: Shoot Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:54:37.539
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:54:37.539
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:56:04.496
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:56:04.496
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:58:36.902
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:58:36.903
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:59:06.872
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 11:59:06.872
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:14:24.350
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:14:24.351
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:15:05.949
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:15:05.950
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:16:44.682
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:16:44.682
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:18:10.144
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:18:10.145
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:19:07.155
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:19:07.155
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:31:42.336
+!MESSAGE [org.usfirst.frc.team6000.robot.subsystems [in src [in Team6000-2016]]
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks
+    class DriveTrain
+      Victor makeInverted(Victor)
+      RobotDrive robotDrive
+      void drive()
+      void driveInverted()
+      void initDefaultCommand()
+  [Working copy] Shooter.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class Shooter
+      void shoot(double)
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:31:42.336
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:31:42.347
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:31:42.348
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:31:48.792
+!MESSAGE Class: ShooterArticular Package: org.usfirst.frc.team6000.robot.subsystems
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:34:38.704
+!MESSAGE [org.usfirst.frc.team6000.robot [in src [in Team6000-2016]]
+  [Working copy] RobotMap.java
+    package org.usfirst.frc.team6000.robot
+    import edu.wpi.first.wpilibj.Victor
+    class RobotMap
+      Victor leftMotor
+      Victor rightMotor
+      Victor leftShooterMotor
+      Victor rightShooterMotor
+  [Working copy] Robot.java
+    package org.usfirst.frc.team6000.robot
+    import edu.wpi.first.wpilibj.IterativeRobot
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Scheduler
+    import edu.wpi.first.wpilibj.livewindow.LiveWindow
+    import org.usfirst.frc.team6000.robot.subsystems.DriveTrain
+    import org.usfirst.frc.team6000.robot.subsystems.Shooter
+    import org.usfirst.frc.team6000.robot.subsystems.ShooterArticulator
+    import edu.wpi.first.wpilibj.smartdashboard.SendableChooser
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Robot
+      DriveTrain DriveTrain
+      Shooter Shooter
+      ShooterArticulator ShooterArticaltor
+      OI oi
+      Command autonomousCommand
+      SendableChooser chooser
+      void robotInit()
+      void disabledInit()
+      void disabledPeriodic()
+      void autonomousInit()
+      void autonomousPeriodic()
+      void teleopInit()
+      void teleopPeriodic()
+      void testPeriodic()
+  [Working copy] OI.java
+    package org.usfirst.frc.team6000.robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.buttons.Button
+    import edu.wpi.first.wpilibj.buttons.JoystickButton
+    import edu.wpi.first.wpilibj.command.Command
+    import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks
+    import org.usfirst.frc.team6000.robot.commands.Shoot
+    import org.usfirst.frc.team6000.robot.subsystems.DriveTrain
+    import org.usfirst.frc.team6000.robot.subsystems.Shooter
+    class OI
+      Joystick leftStick
+      Joystick rightStick
+      Button button5
+      Button button6
+      OI()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:34:38.704
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:34:38.715
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:34:38.716
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:34:48.466
+!MESSAGE Class: ArticulateShooter Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:48:00.410
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:48:00.411
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:48:35.017
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:48:35.017
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:49:11.743
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:49:11.744
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:50:43.513
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:50:43.514
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:53:26.239
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:53:26.240
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:57:15.434
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 12:57:15.435
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:00:08.565
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:00:08.565
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:06:12.354
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:06:12.355
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:10:18.444
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:10:18.444
+!MESSAGE Targets: debug-deploy, Mode: debug
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:10:20.223
+!MESSAGE {port=8348, hostname=roborio-6000-FRC.local}
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:10:20.223
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:10:21.679
+!MESSAGE Unable to attach debugger. 19 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:10:23.680
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:10:24.701
+!MESSAGE Unable to attach debugger. 18 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:10:26.702
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:10:27.716
+!MESSAGE Unable to attach debugger. 17 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:10:29.716
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:10:30.731
+!MESSAGE Unable to attach debugger. 16 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:10:32.731
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:10:32.926
+!MESSAGE Debugger attached.
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:11:11.650
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:11:11.651
+!MESSAGE Targets: debug-deploy, Mode: debug
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:11:13.201
+!MESSAGE {port=8348, hostname=roborio-6000-FRC.local}
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:11:13.202
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:11:14.536
+!MESSAGE Unable to attach debugger. 19 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:11:16.537
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:11:17.557
+!MESSAGE Unable to attach debugger. 18 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:11:19.558
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:11:20.568
+!MESSAGE Unable to attach debugger. 17 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:11:22.568
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:11:23.582
+!MESSAGE Unable to attach debugger. 16 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:11:25.582
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:11:25.654
+!MESSAGE Debugger attached.
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:13:14.381
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:13:14.381
+!MESSAGE Targets: debug-deploy, Mode: debug
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:13:16.104
+!MESSAGE {port=8348, hostname=roborio-6000-FRC.local}
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:13:16.105
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:13:17.446
+!MESSAGE Unable to attach debugger. 19 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:13:19.446
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:13:20.460
+!MESSAGE Unable to attach debugger. 18 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:13:22.461
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:13:23.477
+!MESSAGE Unable to attach debugger. 17 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:13:25.477
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:13:26.492
+!MESSAGE Unable to attach debugger. 16 attempts remain - waiting 2 second(s) before retrying...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:13:28.492
+!MESSAGE Attemping to attach debugger...
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:13:28.589
+!MESSAGE Debugger attached.
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:14:35.734
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:14:35.735
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:16:02.685
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:16:02.686
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:17:08.484
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:17:08.484
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:33.976
+!MESSAGE [class OI [in [Working copy] OI.java [in org.usfirst.frc.team6000.robot [in src [in Team6000-2016]]]]
+  Joystick leftStick
+  Joystick rightStick
+  Button button5
+  Button button3
+  Button button4
+  Button button6
+  OI()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:33.977
+!MESSAGE class org.eclipse.jdt.internal.core.SourceType
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:33.977
+!MESSAGE Element not instance of IResource
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:33.988
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:33.988
+!MESSAGE Project: null
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:33.988
+!MESSAGE Project: null
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:33.989
+!MESSAGE Project: P/No Project
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:22:33.989
+!MESSAGE Error getting default package.
+!STACK 1
+Java Model Exception: Java Model Status [No Project does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.Openable.openAncestors(Openable.java:505)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:241)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:257)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage.getDefaultPackage(FileTemplateWizardMainPage.java:200)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage.dialogChanged(FileTemplateWizardMainPage.java:148)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage.access$4(FileTemplateWizardMainPage.java:139)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage$5.modifyText(FileTemplateWizardMainPage.java:116)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:179)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Text.wmCommandChild(Text.java:3071)
+	at org.eclipse.swt.widgets.Control.WM_COMMAND(Control.java:4824)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4679)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2443)
+	at org.eclipse.swt.widgets.Text.callWindowProc(Text.java:260)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4774)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2671)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.SetWindowTextW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.SetWindowText(OS.java:3473)
+	at org.eclipse.swt.widgets.Text.setText(Text.java:2296)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage.initialize(FileTemplateWizardMainPage.java:132)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage.createControl(FileTemplateWizardMainPage.java:120)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:175)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:705)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:597)
+	at org.eclipse.jface.window.Window.create(Window.java:430)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1096)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:96)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-02-07 13:22:33.990
+!MESSAGE No Project does not exist
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:38.874
+!MESSAGE Project: P/No Project
+
+!ENTRY WPILib_Java_Robot_Development 4 0 2016-02-07 13:22:38.874
+!MESSAGE Error getting default package.
+!STACK 1
+Java Model Exception: Java Model Status [No Project does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.Openable.openAncestors(Openable.java:505)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:241)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:257)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage.getDefaultPackage(FileTemplateWizardMainPage.java:200)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage.dialogChanged(FileTemplateWizardMainPage.java:145)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage.access$4(FileTemplateWizardMainPage.java:139)
+	at edu.wpi.first.wpilib.plugins.java.wizards.file_template.FileTemplateWizardMainPage$3.modifyText(FileTemplateWizardMainPage.java:92)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:179)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Combo.wmCommandChild(Combo.java:3169)
+	at org.eclipse.swt.widgets.Control.WM_COMMAND(Control.java:4824)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4679)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2443)
+	at org.eclipse.swt.widgets.Combo.callWindowProc(Combo.java:476)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4774)
+	at org.eclipse.swt.widgets.Combo.windowProc(Combo.java:2806)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:99)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-02-07 13:22:38.875
+!MESSAGE No Project does not exist
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:38.875
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:38.878
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:22:44.196
+!MESSAGE Class: DriveInverted Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:26:28.339
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:26:28.340
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:27:54.400
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 13:27:54.400
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 14:07:54.287
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 14:07:54.288
+!MESSAGE Targets: deploy, Mode: run

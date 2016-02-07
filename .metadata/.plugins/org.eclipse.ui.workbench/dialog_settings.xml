@@ -18,4 +18,6 @@
 			<item value="edu.wpi.first.wpilib.plugins.java"/>
 		</list>
 	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>
