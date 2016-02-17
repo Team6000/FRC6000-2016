@@ -18,10 +18,14 @@ public class RobotMap {
     
     public static Victor leftShooterMotor = new Victor(2);
     public static Victor rightShooterMotor = new Victor(3);
+    public static Encoder leftShooterEncoder = new Encoder(2, 3, false, Encoder.EncodingType.k2X);
+    public static Encoder rightShooterEncoder = new Encoder(4, 5, true, Encoder.EncodingType.k2X);
+    
     
     public static Victor shooterAngler = new Victor(4);
     public static Servo fireServo = new Servo(5);
     public static Encoder articulatorEncoder = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
+    
     
     
     // If you are using multiple modules, make sure to define both the port

@@ -29,7 +29,7 @@ public class Shoot extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.Shooter.shoot(setVelocity);
+    	Robot.Shooter.roughShoot(setVelocity);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -39,7 +39,7 @@ public class Shoot extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.Shooter.shoot(0.0);
+    	Robot.Shooter.roughShoot(0.0);
     	
     }
 

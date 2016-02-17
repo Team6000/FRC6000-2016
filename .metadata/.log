@@ -7179,3 +7179,45 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:42:51.237
 !MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 18:57:46.713
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 18:57:46.714
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 18:58:33.301
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 18:58:33.301
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:02:40.718
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:02:40.719
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:02:51.509
+!MESSAGE Last deploy running
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:02:51.510
+!MESSAGE Waiting
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:02:51.510
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:02:51.510
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:05:04.092
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:05:04.092
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:06:46.895
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:06:46.896
+!MESSAGE Targets: deploy, Mode: run
