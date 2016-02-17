@@ -9,7 +9,11 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc.team6000.robot.commands.ArticulateShooter;
 import org.usfirst.frc.team6000.robot.commands.DriveInverted;
 import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
+import org.usfirst.frc.team6000.robot.commands.Fire;
+import org.usfirst.frc.team6000.robot.commands.FireSequence;
+import org.usfirst.frc.team6000.robot.commands.MoveForOneSec;
 import org.usfirst.frc.team6000.robot.commands.Shoot;
+import org.usfirst.frc.team6000.robot.commands.ShooterAngle;
 import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 
@@ -32,8 +36,11 @@ public class OI {
 	Button button4 = new JoystickButton(leftStick,4);
 	Button button6 = new JoystickButton(leftStick, 6);
 	
-	
+	Button button7 = new JoystickButton(leftStick,7);
     
+	Button button11 = new JoystickButton(leftStick, 11);
+	Button button12 = new JoystickButton(leftStick, 12);
+	
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to
     // commands the same as any other Button.
@@ -46,11 +53,20 @@ public class OI {
     // until it is finished as determined by it's isFinished method.
     // button.whenPressed(new ExampleCommand());
 	public OI(){
-		button5.whenPressed(new Shoot(0.4, leftStick, 5));
+		button5.whenPressed(new Shoot(0.5, leftStick, 5));
 		button3.whenPressed(new Shoot(-1.0, leftStick, 3));
 		
-		button4.whenPressed(new ArticulateShooter(0.5, leftStick, 4));
-		button6.whenPressed(new ArticulateShooter(-0.5, leftStick, 6));
+		button4.whenPressed(new ArticulateShooter(0.25, leftStick, 4));
+		button6.whenPressed(new ArticulateShooter(-0.25, leftStick, 6));
+		
+		button7.whenPressed(new FireSequence());
+		
+		button11.whenPressed(new MoveForOneSec(0.25));
+		
+		
+		button12.whenPressed(new ShooterAngle(60, leftStick, 12));
+	
+		
 		
 	}
 

@@ -6117,3 +6117,1065 @@ Java Model Exception: Java Model Status [No Project does not exist]
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 14:07:54.288
 !MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 15:31:17.098
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 15:31:17.099
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 15:31:29.542
+!MESSAGE Last deploy running
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 15:31:29.543
+!MESSAGE Waiting
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 15:31:29.544
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-07 15:31:29.545
+!MESSAGE Targets: deploy, Mode: run
+!SESSION 2016-02-08 16:48:24.191 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-02-08 16:48:25.840
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-08 16:48:33.236
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Owner'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-08 16:48:33.775
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-08 16:48:33.776
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-08 16:48:33.778
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-08 16:48:33.778
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:45:46.006
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] DriveInverted.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class DriveInverted
+      DriveInverted()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:45:46.007
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:45:46.079
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:45:46.081
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:45:57.246
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:46:01.060
+!MESSAGE Class: Fire Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:48:11.303
+!MESSAGE [org.usfirst.frc.team6000.robot.subsystems [in src [in Team6000-2016]]
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks
+    class DriveTrain
+      Victor makeInverted(Victor)
+      RobotDrive robotDrive
+      void drive()
+      void driveInverted()
+      void initDefaultCommand()
+  [Working copy] Shooter.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class Shooter
+      void shoot(double)
+      void initDefaultCommand()
+  [Working copy] ShooterArticulator.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ShooterArticulator
+      void rotate(double)
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:48:11.304
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:48:11.322
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:48:11.323
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:48:32.425
+!MESSAGE Class: BallPusher Package: org.usfirst.frc.team6000.robot.subsystems
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:53:16.331
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:53:16.332
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:54:08.014
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:54:08.015
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:55:38.390
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:55:38.391
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:55:55.139
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:55:55.140
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:57:27.893
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] DriveInverted.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class DriveInverted
+      DriveInverted()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:57:27.894
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:57:27.944
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:57:27.946
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:57:35.120
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] DriveInverted.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class DriveInverted
+      DriveInverted()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:57:35.121
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:57:35.178
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:57:35.180
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:57:41.539
+!MESSAGE Class: FireSequence Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:58:57.478
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:58:57.479
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:59:36.647
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 18:59:36.649
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:00:16.689
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:00:16.691
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:03:09.151
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:03:09.152
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:09:51.490
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:09:51.491
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:10:21.531
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:10:21.533
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:12:45.054
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:12:45.055
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:13:47.600
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:13:47.601
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:14:23.450
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:14:23.451
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:15:16.054
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:15:16.055
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:15:55.563
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:15:55.565
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:17:18.086
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:17:18.088
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:18:00.086
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:18:00.087
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:18:44.274
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-08 19:18:44.275
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-10 12:52:09.750
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-10 12:52:09.757
+!MESSAGE Targets: deploy, Mode: run
+!SESSION 2016-02-11 16:59:56.097 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-11 17:00:08.222
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Owner'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-11 17:00:08.808
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-11 17:00:08.812
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-11 17:00:08.813
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-11 17:00:08.814
+!MESSAGE Installedjava
+!SESSION 2016-02-11 17:49:43.858 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -data C:\Users\Owner\Documents\GitHub\FRC6000-2016 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-11 17:49:53.061
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Owner'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-11 17:49:53.494
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-11 17:49:53.495
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-11 17:49:53.497
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-11 17:49:53.498
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-11 18:39:12.946
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-11 18:39:12.947
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-11 18:44:48.892
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-11 18:44:48.892
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-11 18:45:33.620
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-11 18:45:33.620
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:26:43.192
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:26:43.203
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:27:33.982
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:27:33.982
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:31:12.124
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:31:12.124
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:33:27.570
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:33:27.571
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:38:25.816
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:38:25.817
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:40:17.602
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:40:17.603
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:41:11.274
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:41:11.275
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:44:47.784
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  [Working copy] Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] FireSequence.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class FireSequence
+      FireSequence()
+  [Working copy] DriveInverted.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class DriveInverted
+      DriveInverted()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:44:47.785
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:44:47.913
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:44:47.914
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:45:18.222
+!MESSAGE Class: MoveForOneSec Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:51:20.759
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:51:20.759
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:52:23.071
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:52:23.071
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:53:24.817
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:53:24.818
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:54:20.680
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:54:20.681
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:55:13.157
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:55:13.157
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:55:53.937
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:55:53.937
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:56:58.829
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:56:58.830
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:58:05.736
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:58:05.737
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:59:30.719
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 15:59:30.719
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:06:29.821
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:06:29.823
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:17:30.494
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  FireSequence.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class FireSequence
+      FireSequence()
+  DriveInverted.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class DriveInverted
+      DriveInverted()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] MoveForOneSec.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class MoveForOneSec
+      double speed
+      Timer moveTimer
+      MoveForOneSec(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:17:30.497
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:17:30.599
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:17:30.602
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:17:41.750
+!MESSAGE Class: ShooterAngle Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:20:05.103
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:20:05.105
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:20:42.686
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:20:42.688
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:22:48.888
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:22:48.890
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:24:20.665
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:24:20.667
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:25:32.125
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:25:32.130
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:27:30.437
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 19:27:30.438
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:02:26.769
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:02:26.771
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:04:14.279
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:04:14.281
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:07:24.921
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:07:24.923
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:25:31.609
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:25:31.611
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:26:32.639
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:26:32.640
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:28:16.654
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:28:16.655
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:29:46.357
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:29:46.359
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:31:50.365
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:31:50.367
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:33:03.094
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:33:03.096
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:34:12.258
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:34:12.260
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:36:48.430
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:36:48.433
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:39:16.486
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:39:16.488
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:40:45.907
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:40:45.909
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:43:39.132
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:43:39.134
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:44:59.023
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:44:59.025
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:52:32.635
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:52:32.637
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:55:57.708
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 20:55:57.709
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:01:07.595
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:01:07.597
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:05:29.420
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:05:29.422
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:06:20.620
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:06:20.621
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:12:44.965
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:12:44.966
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:14:30.463
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:14:30.465
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:27:52.504
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:27:52.506
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:44:49.410
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:44:49.412
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:46:07.901
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:46:07.904
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:47:32.856
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 21:47:32.858
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 22:03:36.700
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 22:03:36.702
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 22:06:14.104
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 22:06:14.105
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 22:09:14.902
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 22:09:14.904
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 22:14:51.819
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-15 22:14:51.821
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:35:45.652
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:35:45.656
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:36:56.125
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:36:56.127
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:39:10.641
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:39:10.643
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:40:33.309
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:40:33.311
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:41:32.429
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:41:32.431
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:42:51.236
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:42:51.237
+!MESSAGE Targets: deploy, Mode: run

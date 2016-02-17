@@ -1,5 +1,7 @@
 package org.usfirst.frc.team6000.robot;
 
+import edu.wpi.first.wpilibj.Encoder;
+import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.Victor;
 
 /**
@@ -13,9 +15,15 @@ public class RobotMap {
     // following variables to use with your drivetrain subsystem.
     public static Victor leftMotor = new Victor(0);
     public static Victor rightMotor = new Victor(1);
+    
     public static Victor leftShooterMotor = new Victor(2);
     public static Victor rightShooterMotor = new Victor(3);
+    
     public static Victor shooterAngler = new Victor(4);
+    public static Servo fireServo = new Servo(5);
+    public static Encoder articulatorEncoder = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
+    
+    
     // If you are using multiple modules, make sure to define both the port
     // number and the module. For example you with a rangefinder:
     // public static int rangefinderPort = 1;

@@ -9,6 +9,7 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 import org.usfirst.frc.team6000.robot.subsystems.ShooterArticulator;
+import org.usfirst.frc.team6000.robot.subsystems.BallPusher;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -20,9 +21,15 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * directory.
  */
 public class Robot extends IterativeRobot {
+	
+	public static double P;
+	public static double I;
+	public static double D;
+	
 	public static final DriveTrain DriveTrain = new DriveTrain();
 	public static final Shooter Shooter = new Shooter();
 	public static final ShooterArticulator ShooterArticulator = new ShooterArticulator();
+	public static final BallPusher BallPusher = new BallPusher();
 	public static OI oi;
 
     Command autonomousCommand;
@@ -84,18 +91,24 @@ public class Robot extends IterativeRobot {
     }
 
     public void teleopInit() {
+    	
 		// This makes sure that the autonomous stops running when
         // teleop starts running. If you want the autonomous to 
         // continue until interrupted by another command, remove
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
-    }
+        RobotMap.articulatorEncoder.reset();
+       
+        		}
 
     /**
      * This function is called periodically during operator control
      */
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
+        SmartDashboard.putNumber("Encoder_Rate", RobotMap.articulatorEncoder.getRate());
+        SmartDashboard.putNumber("Encoder_Angle", RobotMap.articulatorEncoder.getDistance());
+       
     }
     
     /**
