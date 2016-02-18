@@ -6,7 +6,7 @@ import org.usfirst.frc.team6000.robot.RobotMap;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ * 
  */
 public class DriveInverted extends Command {
 
