@@ -7221,3 +7221,129 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 19:06:46.896
 !MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-17 17:10:12.150
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  FireSequence.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class FireSequence
+      FireSequence()
+  DriveInverted.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class DriveInverted
+      DriveInverted()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  MoveForOneSec.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class MoveForOneSec
+      double speed
+      Timer moveTimer
+      MoveForOneSec(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ShooterAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ShooterAngle
+      double kP
+      double kI
+      double DB
+      double setpoint
+      Joystick userStick
+      int buttonNum
+      double errorI
+      ShooterAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-17 17:10:12.151
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-17 17:10:12.198
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-17 17:10:12.201
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-17 17:10:18.443
+!MESSAGE Class: Aim Package: org.usfirst.frc.team6000.robot.commands
