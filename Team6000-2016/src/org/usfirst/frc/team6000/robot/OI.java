@@ -11,9 +11,7 @@ import org.usfirst.frc.team6000.robot.commands.DriveInverted;
 import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
 import org.usfirst.frc.team6000.robot.commands.Fire;
 import org.usfirst.frc.team6000.robot.commands.FireSequence;
-import org.usfirst.frc.team6000.robot.commands.MoveForOneSec;
 import org.usfirst.frc.team6000.robot.commands.Shoot;
-import org.usfirst.frc.team6000.robot.commands.ShooterAngle;
 import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 
@@ -38,9 +36,6 @@ public class OI {
 	
 	Button button7 = new JoystickButton(leftStick,7);
     
-	Button button11 = new JoystickButton(leftStick, 11);
-	Button button12 = new JoystickButton(leftStick, 12);
-	
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to
     // commands the same as any other Button.
@@ -60,13 +55,6 @@ public class OI {
 		button6.whenPressed(new ArticulateShooter(-0.25, leftStick, 6));
 		
 		button7.whenPressed(new FireSequence());
-		
-		button11.whenPressed(new MoveForOneSec(0.25));
-		
-		
-		button12.whenPressed(new ShooterAngle(60, leftStick, 12));
-	
-		
 		
 	}
 
