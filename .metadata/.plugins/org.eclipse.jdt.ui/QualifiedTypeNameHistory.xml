@@ -3,11 +3,17 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Victor"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive.MotorType"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Servo"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.Robot"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.Fire"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.FireSequence"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.RobotMap"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.Robot"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.SetShooterSpeed"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.ShooterAngle"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.Aim"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>

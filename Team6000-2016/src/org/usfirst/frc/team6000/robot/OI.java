@@ -2,6 +2,7 @@ package org.usfirst.frc.team6000.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
 
+
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.command.Command;
@@ -11,7 +12,9 @@ import org.usfirst.frc.team6000.robot.commands.DriveInverted;
 import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
 import org.usfirst.frc.team6000.robot.commands.Fire;
 import org.usfirst.frc.team6000.robot.commands.FireSequence;
+import org.usfirst.frc.team6000.robot.commands.SetShooterSpeed;
 import org.usfirst.frc.team6000.robot.commands.Shoot;
+import org.usfirst.frc.team6000.robot.commands.ShooterAngle;
 import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 
@@ -28,6 +31,7 @@ public class OI {
     // Button button = new JoystickButton(stick, buttonNumber);
 	public static Joystick leftStick = new Joystick(0);
 	public static Joystick rightStick = new Joystick(1);
+	
 	Button button5 = new JoystickButton(leftStick, 5);
 	Button button3 = new JoystickButton(leftStick, 3);
 	
@@ -35,7 +39,11 @@ public class OI {
 	Button button6 = new JoystickButton(leftStick, 6);
 	
 	Button button7 = new JoystickButton(leftStick,7);
+	Button button8 = new JoystickButton(leftStick, 8);
+	
+	Button button12 = new JoystickButton(leftStick,12);
     
+	
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to
     // commands the same as any other Button.
@@ -48,13 +56,15 @@ public class OI {
     // until it is finished as determined by it's isFinished method.
     // button.whenPressed(new ExampleCommand());
 	public OI(){
-		button5.whenPressed(new Shoot(0.5, leftStick, 5));
-		button3.whenPressed(new Shoot(-1.0, leftStick, 3));
+		
+		button5.whenPressed(new Shoot(-0.5, leftStick, 5));
+		button3.whileHeld(new SetShooterSpeed(-90.0));
 		
 		button4.whenPressed(new ArticulateShooter(0.25, leftStick, 4));
 		button6.whenPressed(new ArticulateShooter(-0.25, leftStick, 6));
 		
 		button7.whenPressed(new FireSequence());
+		button8.whenPressed(new ShooterAngle(60, leftStick, 8));
 		
 	}
 

@@ -1,6 +1,7 @@
 package org.usfirst.frc.team6000.robot.subsystems;
 
 import org.usfirst.frc.team6000.robot.RobotMap;
+import org.usfirst.frc.team6000.robot.commands.SetShooterSpeed;
 
 import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -33,52 +34,27 @@ public class Shooter extends Subsystem {
 
     
     public void setSetpointLeft(double rps) {
-    	if (rps > 0) {
-    		
-    		if(RobotMap.leftShooterEncoder.getRate() < rps) {
-    			RobotMap.leftShooterMotor.set(1.0);
-    		} else {
-    			RobotMap.leftShooterMotor.set(0.0);
-    		}
-    		
-    	} else if (rps < 0) {
-    		if(RobotMap.leftShooterEncoder.getRate() > rps) {
-    			RobotMap.leftShooterMotor.set(-1.0);
-    		} else {
-    			RobotMap.leftShooterMotor.set(0.0);
-    		}
-    		
+    	if (Math.abs(RobotMap.leftShooterEncoder.getRate()) < Math.abs(rps)) {
+    		RobotMap.leftShooterMotor.set(Math.signum(rps) * 1.0);
     		
     	} else {
     		RobotMap.leftShooterMotor.set(0.0);
     	}
+    	SmartDashboard.putNumber("LeftShooterSpeed", RobotMap.leftShooterEncoder.getRate());
     }
     
     public void setSetpointRight(double rps) {
-    	if (rps > 0) {
-    		
-    		if(RobotMap.rightShooterEncoder.getRate() < rps) {
-    			RobotMap.rightShooterMotor.set(1.0);
-    		} else {
-    			RobotMap.rightShooterMotor.set(0.0);
-    		}
-    		
-    	} else if (rps < 0) {
-    		if(RobotMap.rightShooterEncoder.getRate() > rps) {
-    			RobotMap.rightShooterMotor.set(-1.0);
-    		} else {
-    			RobotMap.rightShooterMotor.set(0.0);
-    		}
-    		
+    	if (Math.abs(RobotMap.rightShooterEncoder.getRate()) < Math.abs(rps)) {
+    		RobotMap.rightShooterMotor.set(Math.signum(rps) * 1.0);
     		
     	} else {
     		RobotMap.rightShooterMotor.set(0.0);
     	}
+    	SmartDashboard.putNumber("RightShooterSpeed", RobotMap.rightShooterEncoder.getRate());
     }
     
     public void initDefaultCommand() {
-        // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new SetShooterSpeed(0.0));
     }
 }
 

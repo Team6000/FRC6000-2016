@@ -1,15 +1,17 @@
 
 package org.usfirst.frc.team6000.robot;
 
-import edu.wpi.first.wpilibj.IterativeRobot;
-
-import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+import org.usfirst.frc.team6000.robot.subsystems.BallPusher;
 import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 import org.usfirst.frc.team6000.robot.subsystems.ShooterArticulator;
-import org.usfirst.frc.team6000.robot.subsystems.BallPusher;
+
+import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.Timer;
+import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.command.Scheduler;
+import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+import edu.wpi.first.wpilibj.networktables.NetworkTable;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -66,7 +68,7 @@ public class Robot extends IterativeRobot {
 	 * or additional comparisons to the switch structure below with additional strings & commands.
 	 */
     public void autonomousInit() {
-        autonomousCommand = (Command) chooser.getSelected();
+      //  autonomousCommand = (Command) chooser.getSelected();
         
 		/* String autoSelected = SmartDashboard.getString("Auto Selector", "Default");
 		switch(autoSelected) {
@@ -86,8 +88,22 @@ public class Robot extends IterativeRobot {
     /**
      * This function is called periodically during autonomous
      */
+ 	NetworkTable table;
+ 	
     public void autonomousPeriodic() {
         Scheduler.getInstance().run();
+        
+//        table = NetworkTable.getTable("GRIP/myContoursReport");
+//        double[] defaultValue = new double [0];
+//        while (true) {
+//        	double [] areas = table.getNumberArray("area", defaultValue);
+//        	System.out.print("areas");
+//        	for (double area : areas) {
+//        		System.out.print(area + " ");
+//        	}
+//        	System.out.println();
+//        	Timer.delay(1);
+//        }
     }
 
     public void teleopInit() {
