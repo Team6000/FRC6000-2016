@@ -1,5 +1,7 @@
 package org.usfirst.frc.team6000.robot;
 
+import com.kauailabs.navx.frc.AHRS;
+
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.Victor;
@@ -15,6 +17,9 @@ public class RobotMap {
     // following variables to use with your drivetrain subsystem.
     public static Victor leftMotor = new Victor(0);
     public static Victor rightMotor = new Victor(1);
+    public static Encoder leftWheelEncoder = new Encoder(6,7, true, Encoder.EncodingType.k2X);
+    public static Encoder rightWheelEncoder = new Encoder(8,9, false, Encoder.EncodingType.k2X);
+    
     
     public static Victor leftShooterMotor = new Victor(2);
     public static Victor rightShooterMotor = new Victor(3);
@@ -25,6 +30,8 @@ public class RobotMap {
     public static Victor shooterAngler = new Victor(4);
     public static Servo fireServo = new Servo(5);
     public static Encoder articulatorEncoder = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
+    
+    public static AHRS ahrs;
     
     
     

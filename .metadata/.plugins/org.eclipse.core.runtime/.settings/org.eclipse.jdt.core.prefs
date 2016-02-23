@@ -3,6 +3,7 @@ org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Java/jdk1.8.0_6
 org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Program Files/Java/jdk1.8.0_65/src.zip
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
 org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/Owner/Downloads/eclipse-cpp-mars-1-win32-x86_64/eclipse/plugins/org.junit_4.12.0.v201504281640/
+org.eclipse.jdt.core.classpathVariable.navx-mxp=C\:/Users/Owner/navx-mxp/java/lib/navx_frc.jar
 org.eclipse.jdt.core.classpathVariable.networktables=C\:/Users/Owner/wpilib/java/current/lib/NetworkTables.jar
 org.eclipse.jdt.core.classpathVariable.networktables.sources=C\:/Users/Owner/wpilib/java/current/lib/NetworkTables-sources.jar
 org.eclipse.jdt.core.classpathVariable.wpilib=C\:/Users/Owner/wpilib/java/current/lib/WPILib.jar

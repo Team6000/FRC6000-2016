@@ -38,7 +38,6 @@ public class DriveWithJoysticks extends Command {
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	RobotMap.leftMotor.set(0.0);
-    	RobotMap.rightMotor.set(0.0);
+    	
     }
 }

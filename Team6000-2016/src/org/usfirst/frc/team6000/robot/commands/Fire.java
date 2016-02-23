@@ -11,18 +11,22 @@ import edu.wpi.first.wpilibj.command.Command;
  */
 public class Fire extends Command {
 	double targetAngle;
+	Timer fireTime;
 	
     public Fire(double angle) {
     	targetAngle = angle;
     	requires(Robot.BallPusher);
+    	fireTime = new Timer();
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	fireTime.reset();
+    	fireTime.start();
     	Robot.BallPusher.setServoAngle(targetAngle);
-    	Timer.delay(0.5);
+    	
     	
     }
 
@@ -33,11 +37,13 @@ public class Fire extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-    	return true;
+    	return fireTime.get() >= 0.5;
     }
 
     // Called once after isFinished returns true
     protected void end() {
+    	fireTime.stop();
+    	
     	
     }
 

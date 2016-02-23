@@ -6,7 +6,12 @@ import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 import org.usfirst.frc.team6000.robot.subsystems.ShooterArticulator;
 
+import com.kauailabs.navx.frc.AHRS;
+
+import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.SPI;
+import edu.wpi.first.wpilibj.SerialPort;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -43,7 +48,14 @@ public class Robot extends IterativeRobot {
      */
     public void robotInit() {
 		oi = new OI();
-            }
+		try {
+			RobotMap.ahrs =  new AHRS(SPI.Port.kMXP);
+		} catch (RuntimeException ex) {
+			 DriverStation.reportError("Error instantiating navX-MXP:  " + ex.getMessage(), true);
+		}
+		
+		
+     }
 	
 	/**
      * This function is called once each time the robot enters Disabled mode.
@@ -83,12 +95,13 @@ public class Robot extends IterativeRobot {
     	
     	// schedule the autonomous command (example)
         if (autonomousCommand != null) autonomousCommand.start();
+        
     }
 
     /**
      * This function is called periodically during autonomous
      */
- 	NetworkTable table;
+ 	//NetworkTable table;
  	
     public void autonomousPeriodic() {
         Scheduler.getInstance().run();
@@ -104,7 +117,8 @@ public class Robot extends IterativeRobot {
 //        	System.out.println();
 //        	Timer.delay(1);
 //        }
-    }
+      
+     }
 
     public void teleopInit() {
     	
@@ -114,6 +128,9 @@ public class Robot extends IterativeRobot {
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
         RobotMap.articulatorEncoder.reset();
+        RobotMap.ahrs.reset();
+        
+        
        
         		}
 
@@ -124,7 +141,11 @@ public class Robot extends IterativeRobot {
         Scheduler.getInstance().run();
         SmartDashboard.putNumber("Encoder_Rate", RobotMap.articulatorEncoder.getRate());
         SmartDashboard.putNumber("Encoder_Angle", RobotMap.articulatorEncoder.getDistance());
-       
+        SmartDashboard.putNumber("LeftWheelSpeed", RobotMap.leftWheelEncoder.getRate());
+        SmartDashboard.putNumber("RightWheelSpeed", RobotMap.rightWheelEncoder.getRate());
+        
+        
+       if (RobotMap.ahrs != null) SmartDashboard.putNumber("Robot_Angle", RobotMap.ahrs.getYaw());
     }
     
     /**

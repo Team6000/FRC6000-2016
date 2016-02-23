@@ -7,11 +7,13 @@ import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.command.Command;
 
+import org.usfirst.frc.team6000.robot.commands.Aim;
 import org.usfirst.frc.team6000.robot.commands.ArticulateShooter;
-import org.usfirst.frc.team6000.robot.commands.DriveInverted;
+
 import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
 import org.usfirst.frc.team6000.robot.commands.Fire;
 import org.usfirst.frc.team6000.robot.commands.FireSequence;
+import org.usfirst.frc.team6000.robot.commands.RobotAngle;
 import org.usfirst.frc.team6000.robot.commands.SetShooterSpeed;
 import org.usfirst.frc.team6000.robot.commands.Shoot;
 import org.usfirst.frc.team6000.robot.commands.ShooterAngle;
@@ -42,6 +44,8 @@ public class OI {
 	Button button8 = new JoystickButton(leftStick, 8);
 	
 	Button button12 = new JoystickButton(leftStick,12);
+	
+	Button button9 = new JoystickButton(leftStick,9);
     
 	
     // There are a few additional built in buttons you can use. Additionally,
@@ -65,6 +69,10 @@ public class OI {
 		
 		button7.whenPressed(new FireSequence());
 		button8.whenPressed(new ShooterAngle(60, leftStick, 8));
+		
+		button12.whileHeld(new RobotAngle(30, leftStick, 12));
+		
+		button9.whenPressed(new Aim());
 		
 	}
 

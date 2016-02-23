@@ -14,7 +14,23 @@ import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
  */
 public class DriveTrain extends Subsystem {
     
-
+	private static double KfRight = .008;
+	private static double KpRight = .012;
+	
+	private static double KfLeft = .0064;
+	private static double KpLeft = .003;
+	
+	public DriveTrain() {
+		RobotMap.leftWheelEncoder.setMaxPeriod(0.1);
+		RobotMap.leftWheelEncoder.setMinRate(10);
+		RobotMap.leftWheelEncoder.setDistancePerPulse(18.85/360);
+		RobotMap.leftWheelEncoder.setSamplesToAverage(50);
+		
+		RobotMap.rightWheelEncoder.setMaxPeriod(0.1);
+		RobotMap.rightWheelEncoder.setMinRate(10);
+		RobotMap.rightWheelEncoder.setDistancePerPulse(18.85/360);
+		RobotMap.rightWheelEncoder.setSamplesToAverage(50);
+	}
     
     public Victor makeInverted(Victor victor){
     	 victor.setInverted(true);
@@ -29,9 +45,20 @@ public class DriveTrain extends Subsystem {
     }
     
     
-	public void driveInverted(){
-		new RobotDrive(RobotMap.leftMotor, RobotMap.rightMotor);
-	}
+    public void rotate(double speed) {
+    	RobotMap.leftMotor.set(-speed);
+    	RobotMap.rightMotor.set(-speed);
+    }
+	
+    public void leftDrive(double inchesPerSecond) {
+    	double error = inchesPerSecond - RobotMap.leftWheelEncoder.getRate();
+    	RobotMap.leftMotor.set(-KfLeft*inchesPerSecond - KpLeft*error);
+    }
+    
+    public void rightDrive(double inchesPerSecond) {
+    	double error = inchesPerSecond - RobotMap.rightWheelEncoder.getRate();
+    	RobotMap.rightMotor.set(KfRight*inchesPerSecond + KpRight*error);
+    }
     
 	@Override
 	protected void initDefaultCommand() {

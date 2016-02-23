@@ -8,8 +8,8 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 public class FireSequence extends CommandGroup {
     
     public  FireSequence() {
-    	addSequential(new Fire(70));
-    	addSequential(new Fire(170));
+    	addSequential(new Fire(90));
+    	addSequential(new Fire(0));
         // Add Commands here:
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());
