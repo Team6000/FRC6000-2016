@@ -68,9 +68,9 @@ public class OI {
 		button6.whenPressed(new ArticulateShooter(-0.25, leftStick, 6));
 		
 		button7.whenPressed(new FireSequence());
-		button8.whenPressed(new ShooterAngle(60, leftStick, 8));
+		button8.whenPressed(new ShooterAngle(65, leftStick, 8));
 		
-		button12.whileHeld(new RobotAngle(30, leftStick, 12));
+		button12.whileHeld(new RobotAngle(85, leftStick, 12));
 		
 		button9.whenPressed(new Aim());
 		

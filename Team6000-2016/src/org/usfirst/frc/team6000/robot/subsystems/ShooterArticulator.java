@@ -3,6 +3,7 @@ package org.usfirst.frc.team6000.robot.subsystems;
 import org.usfirst.frc.team6000.robot.Robot;
 import org.usfirst.frc.team6000.robot.RobotMap;
 
+import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
@@ -32,4 +33,3 @@ public class ShooterArticulator extends Subsystem {
         //setDefaultCommand(new MySpecialCommand());
     }
 }
-
