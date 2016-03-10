@@ -14,11 +14,11 @@ import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
  */
 public class DriveTrain extends Subsystem {
     
-	private static double KfRight = .008;
-	private static double KpRight = .012;
+	private static double KfRight = 0.008;
+	private static double KpRight = 0.012;
 	
-	private static double KfLeft = .0064;
-	private static double KpLeft = .003;
+	private static double KfLeft = 0.0064;
+	private static double KpLeft = 0.003;
 	
 	public DriveTrain() {
 		RobotMap.leftWheelEncoder.setMaxPeriod(0.1);
@@ -41,7 +41,8 @@ public class DriveTrain extends Subsystem {
     
     
     public void drive(){
-    	robotDrive.tankDrive(OI.leftStick, OI.rightStick);
+    	robotDrive.tankDrive(Math.signum(OI.leftStick.getY())*(OI.leftStick.getY()*OI.leftStick.getY()), 
+    			Math.signum(OI.rightStick.getY())*(OI.rightStick.getY()*OI.rightStick.getY()));
     }
     
     

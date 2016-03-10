@@ -37,7 +37,7 @@ public class ShooterAngle extends Command {
 		setTime = t;
 		setpoint = s + DB*Math.signum(s);
 		
-		if (setpoint > 90) setpoint = 90;
+		setpoint = setpoint > 90 ? 90 : setpoint;
 		
 		errorI = 0;
 		requires(Robot.ShooterArticulator);

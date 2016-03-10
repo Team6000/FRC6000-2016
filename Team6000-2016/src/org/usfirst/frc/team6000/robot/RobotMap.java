@@ -2,6 +2,8 @@ package org.usfirst.frc.team6000.robot;
 
 import com.kauailabs.navx.frc.AHRS;
 
+import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.Victor;
@@ -30,6 +32,11 @@ public class RobotMap {
     public static Victor shooterAngler = new Victor(4);
     public static Servo fireServo = new Servo(5);
     public static Encoder articulatorEncoder = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
+    
+    public static DigitalInput shooterZero = new DigitalInput(0);
+    
+    public static DoubleSolenoid intakeAngler = new DoubleSolenoid(0, 1);
+    public static Victor intakeWheels = new Victor(5);
     
     public static AHRS ahrs;
     

@@ -9,7 +9,8 @@ import edu.wpi.first.wpilibj.command.Command;
 
 import org.usfirst.frc.team6000.robot.commands.Aim;
 import org.usfirst.frc.team6000.robot.commands.ArticulateShooter;
-
+import org.usfirst.frc.team6000.robot.commands.BallIntake;
+import org.usfirst.frc.team6000.robot.commands.BreakOutOfAimLoop;
 import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
 import org.usfirst.frc.team6000.robot.commands.Fire;
 import org.usfirst.frc.team6000.robot.commands.FireSequence;
@@ -33,6 +34,7 @@ public class OI {
     // Button button = new JoystickButton(stick, buttonNumber);
 	public static Joystick leftStick = new Joystick(0);
 	public static Joystick rightStick = new Joystick(1);
+	public static Joystick shooterPad = new Joystick(2);
 	
 	Button button5 = new JoystickButton(leftStick, 5);
 	Button button3 = new JoystickButton(leftStick, 3);
@@ -46,7 +48,13 @@ public class OI {
 	Button button12 = new JoystickButton(leftStick,12);
 	
 	Button button9 = new JoystickButton(leftStick,9);
+	Button button1 = new JoystickButton(leftStick, 1);
     
+	Button shootButton1 = new JoystickButton(shooterPad, 1);
+	Button shootButton2 = new JoystickButton(shooterPad, 2);
+	Button shootButton3 = new JoystickButton(shooterPad, 3);
+	Button shootButton4 = new JoystickButton(shooterPad, 4);
+	Button shootButton5 = new JoystickButton(shooterPad, 5);
 	
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to
@@ -61,18 +69,20 @@ public class OI {
     // button.whenPressed(new ExampleCommand());
 	public OI(){
 		
-		button5.whenPressed(new Shoot(-0.5, leftStick, 5));
-		button3.whileHeld(new SetShooterSpeed(-90.0));
+		shootButton3.whenPressed(new BallIntake(-0.5, shooterPad, 3));
+		shootButton5.whenPressed(new BallIntake(0.5, shooterPad, 5));
+		shootButton4.whileHeld(new SetShooterSpeed(-90.0));
 		
 		button4.whenPressed(new ArticulateShooter(0.25, leftStick, 4));
 		button6.whenPressed(new ArticulateShooter(-0.25, leftStick, 6));
 		
-		button7.whenPressed(new FireSequence());
-		button8.whenPressed(new ShooterAngle(65, leftStick, 8));
+		shootButton2.whenPressed(new FireSequence());
+		shootButton1.whenPressed(new ShooterAngle(70, shooterPad, 8));
 		
-		button12.whileHeld(new RobotAngle(85, leftStick, 12));
+		button12.whenPressed(new RobotAngle(85, leftStick, 12));
 		
-		button9.whenPressed(new Aim());
+//		button9.whenPressed(new Aim());
+		button1.whenPressed(new BreakOutOfAimLoop());
 		
 	}
 

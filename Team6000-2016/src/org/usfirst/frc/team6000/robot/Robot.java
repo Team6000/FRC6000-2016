@@ -5,6 +5,7 @@ import org.usfirst.frc.team6000.robot.subsystems.BallPusher;
 import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 import org.usfirst.frc.team6000.robot.subsystems.ShooterArticulator;
+import org.usfirst.frc.team6000.robot.subsystems.Intake;
 
 import com.kauailabs.navx.frc.AHRS;
 
@@ -37,6 +38,7 @@ public class Robot extends IterativeRobot {
 	public static final Shooter Shooter = new Shooter();
 	public static final ShooterArticulator ShooterArticulator = new ShooterArticulator();
 	public static final BallPusher BallPusher = new BallPusher();
+	public static final Intake Intake = new Intake();
 	public static OI oi;
 
     Command autonomousCommand;

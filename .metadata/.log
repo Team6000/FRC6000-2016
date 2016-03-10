@@ -14555,3 +14555,1763 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2016-02-23 22:18:38.756
 !MESSAGE Targets: deploy, Mode: run
+!SESSION 2016-03-06 14:31:59.283 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-03-06 14:32:00.936
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-03-06 14:32:18.778
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-03-06 14:32:18.783
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-03-06 14:32:18.784
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-03-06 14:32:18.785
+!MESSAGE Installedjava
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-03-06 14:32:18.949
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Owner'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-06 14:34:03.040
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-06 14:34:03.040
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-06 14:35:30.467
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-06 14:35:30.467
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-06 16:14:06.522
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-06 16:14:06.523
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-06 16:28:43.241
+!MESSAGE Running ant file: C:\Users\Owner\Documents\GitHub\FRC6000-2016\Team6000-2016\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-06 16:28:43.242
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-03-08 16:42:31.665
+!MESSAGE Error disposing widget for : org.eclipse.e4.ui.model.application.ui.menu.impl.MenuImpl null
+!STACK 0
+org.eclipse.swt.SWTException: Graphic is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.graphics.Font.getFontData(Font.java:190)
+	at org.eclipse.swt.custom.CTabFolderRenderer.drawChevron(CTabFolderRenderer.java:909)
+	at org.eclipse.swt.custom.CTabFolderRenderer.draw(CTabFolderRenderer.java:605)
+	at org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering.draw(CTabRendering.java:252)
+	at org.eclipse.swt.custom.CTabFolder.createButtonImage(CTabFolder.java:715)
+	at org.eclipse.swt.custom.CTabFolder.setButtonBounds(CTabFolder.java:2532)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3757)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3688)
+	at org.eclipse.swt.custom.CTabFolder.onResize(CTabFolder.java:2081)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:337)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Control.sendResize(Control.java:2972)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:994)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1043)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3138)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3134)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:204)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1311)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:998)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1043)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3138)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3134)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:204)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1311)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:998)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1043)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3138)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3134)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3201)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:318)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:263)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:180)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1311)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:998)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1043)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3138)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3134)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:204)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1311)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1722)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4751)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:86)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5578)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4764)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1517)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3177)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1037)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3138)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3134)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3201)
+	at org.eclipse.swt.custom.StackLayout.layout(StackLayout.java:123)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1311)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1722)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4751)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:86)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5578)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4764)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1517)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3177)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1037)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3138)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3134)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3201)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:318)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:263)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:180)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1311)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1722)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4751)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:86)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5578)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4764)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1517)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3177)
+	at org.eclipse.swt.widgets.Composite.setBounds(Composite.java:1037)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3138)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3134)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:204)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1311)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1722)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4751)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:86)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5578)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4764)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5063)
+	at org.eclipse.swt.internal.win32.OS.EndDeferWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:967)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:933)
+	at org.eclipse.swt.widgets.Composite.setResizeChildren(Composite.java:1144)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1726)
+	at org.eclipse.swt.widgets.Canvas.WM_SIZE(Canvas.java:462)
+	at org.eclipse.swt.widgets.Decorations.WM_SIZE(Decorations.java:1817)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4751)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5063)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5578)
+	at org.eclipse.swt.widgets.Canvas.WM_WINDOWPOSCHANGED(Canvas.java:468)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4764)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.SetMenu(Native Method)
+	at org.eclipse.swt.widgets.Decorations.setMenuBar(Decorations.java:1174)
+	at org.eclipse.swt.widgets.Menu.releaseParent(Menu.java:1206)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:830)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:460)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:177)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:914)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
+	at org.eclipse.ui.internal.WorkbenchWindow$1.handleEvent(WorkbenchWindow.java:321)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:85)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:261)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:152)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer$1.widgetDisposed(SWTPartRenderer.java:140)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:822)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:460)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:447)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:725)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3819)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:295)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3300)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4774)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5063)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:330)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.open(MessageDialogWithToggle.java:114)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.openOkCancelConfirm(MessageDialogWithToggle.java:209)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:213)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$1.handleEvent(IDEWorkbenchAdvisor.java:163)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4354)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3313)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4774)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5063)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.equinox.event 4 0 2016-03-08 16:42:31.732
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/ui/UIElement/widget/SET] {ChangedElement=org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl@4047d2d9 (elementId: org.eclipse.e4.ui.compatibility.editor, tags: [Editor, org.eclipse.jdt.ui.CompilationUnitEditor, removeOnHide], contributorURI: null) (widget: null, renderer: org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer@541897c6, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (contributionURI: bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor, object: org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor@341df373, context: PartImpl (org.eclipse.e4.ui.compatibility.editor) Context, variables: [], label: Aim.java, iconURI: platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png, tooltip: null, dirty: false, closeable: true, description: null), Widget=null, AttName=widget, EventType=SET, OldValue=ContributedPartRenderer$2 {}} to handler org.eclipse.e4.ui.services.internal.events.UIEventHandler@13c8e7bc
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.NavigationHistory.getDisplay(NavigationHistory.java:176)
+	at org.eclipse.ui.internal.NavigationHistory.markEditor(NavigationHistory.java:193)
+	at org.eclipse.ui.internal.WorkbenchPage.updateActiveEditorSources(WorkbenchPage.java:403)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartClosed(WorkbenchPage.java:5019)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart$1.handleEvent(CompatibilityPart.java:103)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:85)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:261)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:152)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer$1.widgetDisposed(SWTPartRenderer.java:140)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:822)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:165)
+	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:789)
+	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:1318)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:460)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:447)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:725)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3819)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:295)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3300)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4774)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5063)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:330)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.open(MessageDialogWithToggle.java:114)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.openOkCancelConfirm(MessageDialogWithToggle.java:209)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:213)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$1.handleEvent(IDEWorkbenchAdvisor.java:163)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4354)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3313)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4774)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5063)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3141)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-03-09 21:12:18.312 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-03-09 21:12:20.388
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-03-09 21:12:46.605
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-03-09 21:12:46.695
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-03-09 21:12:46.696
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-03-09 21:12:46.697
+!MESSAGE Installedjava
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-03-09 21:12:47.427
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Owner'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 5 2016-03-09 21:12:49.147
+!MESSAGE The configuration download failed. Version: 1.0.1.v20150913-0716
+!STACK 0
+javax.net.ssl.SSLException: hostname in certificate didn't match: <dev.eclipse.org> != <*.globalsuite.net> OR <*.globalsuite.net> OR <globalsuite.net>
+	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:238)
+	at org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.verify(BrowserCompatHostnameVerifier.java:54)
+	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:159)
+	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:140)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:301)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:291)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.request(AeriServer.java:57)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:73)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 29 2016-03-09 21:12:49.272
+!MESSAGE Startup failed, AERI is disabled until next restart. Version: 1.0.1.v20150913-0716
+!STACK 0
+java.lang.RuntimeException: javax.net.ssl.SSLException: hostname in certificate didn't match: <dev.eclipse.org> != <*.globalsuite.net> OR <*.globalsuite.net> OR <globalsuite.net>
+	at com.google.common.base.Throwables.propagate(Throwables.java:160)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:219)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.net.ssl.SSLException: hostname in certificate didn't match: <dev.eclipse.org> != <*.globalsuite.net> OR <*.globalsuite.net> OR <globalsuite.net>
+	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:238)
+	at org.apache.http.conn.ssl.BrowserCompatHostnameVerifier.verify(BrowserCompatHostnameVerifier.java:54)
+	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:159)
+	at org.apache.http.conn.ssl.AbstractVerifier.verify(AbstractVerifier.java:140)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:301)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:291)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.request(AeriServer.java:57)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:73)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	... 3 more
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:01:08.656
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Timer fireTime
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ArticulateShooter.java (not open)
+  DriveWithJoysticks.java (not open)
+  Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SetShooterSpeed.java (not open)
+  FireSequence.java (not open)
+  [Working copy] ShooterAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ShooterAngle
+      double kP
+      double kI
+      double DB
+      double setpoint
+      Joystick userStick
+      int buttonNum
+      double errorI
+      Timer angleTime
+      double setTime
+      ShooterAngle(double, double)
+      ShooterAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] RobotAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class RobotAngle
+      double kP
+      double setpointAngle
+      double currentError
+      Joystick stick
+      int buttonNum
+      RobotAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Aim.java (not open)]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:01:08.657
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:01:08.749
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:01:08.750
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:01:26.017
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Timer fireTime
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ArticulateShooter.java (not open)
+  DriveWithJoysticks.java (not open)
+  Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SetShooterSpeed.java (not open)
+  FireSequence.java (not open)
+  [Working copy] ShooterAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ShooterAngle
+      double kP
+      double kI
+      double DB
+      double setpoint
+      Joystick userStick
+      int buttonNum
+      double errorI
+      Timer angleTime
+      double setTime
+      ShooterAngle(double, double)
+      ShooterAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] RobotAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class RobotAngle
+      double kP
+      double setpointAngle
+      double currentError
+      Joystick stick
+      int buttonNum
+      RobotAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Aim.java (not open)]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:01:26.018
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:01:26.051
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:01:26.053
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:01:35.839
+!MESSAGE Class: BreakOutOfAimLoop Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:16:06.323
+!MESSAGE [org.usfirst.frc.team6000.robot.subsystems [in src [in Team6000-2016]]
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks
+    class DriveTrain
+      double KfRight
+      double KpRight
+      double KfLeft
+      double KpLeft
+      DriveTrain()
+      Victor makeInverted(Victor)
+      RobotDrive robotDrive
+      void drive()
+      void rotate(double)
+      void leftDrive(double)
+      void rightDrive(double)
+      void initDefaultCommand()
+  Shooter.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import org.usfirst.frc.team6000.robot.commands.SetShooterSpeed
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shooter
+      Shooter()
+      void roughShoot(double)
+      void setSetpointLeft(double)
+      void setSetpointRight(double)
+      void initDefaultCommand()
+  ShooterArticulator.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Scheduler
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ShooterArticulator
+      ShooterArticulator()
+      void rotate(double)
+      void initDefaultCommand()
+  BallPusher.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class BallPusher
+      void setServoAngle(double)
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:16:06.324
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:16:06.366
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:16:06.369
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:16:14.021
+!MESSAGE Class: Intake Package: org.usfirst.frc.team6000.robot.subsystems
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:21:59.132
+!MESSAGE [org.usfirst.frc.team6000.robot.subsystems [in src [in Team6000-2016]]
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks
+    class DriveTrain
+      double KfRight
+      double KpRight
+      double KfLeft
+      double KpLeft
+      DriveTrain()
+      Victor makeInverted(Victor)
+      RobotDrive robotDrive
+      void drive()
+      void rotate(double)
+      void leftDrive(double)
+      void rightDrive(double)
+      void initDefaultCommand()
+  Shooter.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import org.usfirst.frc.team6000.robot.commands.SetShooterSpeed
+    import edu.wpi.first.wpilibj.Victor
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Shooter
+      Shooter()
+      void roughShoot(double)
+      void setSetpointLeft(double)
+      void setSetpointRight(double)
+      void initDefaultCommand()
+  ShooterArticulator.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Scheduler
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ShooterArticulator
+      ShooterArticulator()
+      void rotate(double)
+      void initDefaultCommand()
+  BallPusher.java
+    package org.usfirst.frc.team6000.robot.subsystems
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class BallPusher
+      void setServoAngle(double)
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:21:59.134
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:21:59.172
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:21:59.173
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:22:06.475
+!MESSAGE Class: Intake Package: org.usfirst.frc.team6000.robot.subsystems
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:45:16.987
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Timer fireTime
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SetShooterSpeed.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class SetShooterSpeed
+      double rps
+      SetShooterSpeed(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  FireSequence.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class FireSequence
+      FireSequence()
+  [Working copy] ShooterAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ShooterAngle
+      double kP
+      double kI
+      double DB
+      double setpoint
+      Joystick userStick
+      int buttonNum
+      double errorI
+      Timer angleTime
+      double setTime
+      ShooterAngle(double, double)
+      ShooterAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] RobotAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RobotAngle
+      double kP
+      double setpointAngle
+      double currentError
+      Joystick stick
+      int buttonNum
+      Timer angleTime
+      double setTime
+      RobotAngle(double, double)
+      RobotAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Aim.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import java.io.IOException
+    import java.util.ArrayList
+    import java.util.Arrays
+    import java.util.HashMap
+    import java.util.List
+    import java.util.Map
+    import java.util.concurrent.ExecutorService
+    import java.util.concurrent.Executors
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Scheduler
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Aim
+      double HALF_SCREEN
+      double SPEED
+      double CENTERED_TOLERANCE_PIXELS
+      int ANGLE_TOLERANCE_PIXELS
+      int CALIBRATION_DEGREES
+      int CENTER_SCREEN_PIXELS
+      String MY_CONTOURS_REPORT_TABLE_NAME
+      long SLEEP_MILLIS
+      int NO_VALUE
+      List<String> TABLE_NAME_KEYS
+      Double[] DEFAULT_VALUE
+      double PIXEL_TOLERANCE
+      boolean breakOutOfLoop
+      boolean hasButtonBeenClicked
+      boolean areaHasNotIncreasedDramitically
+      ArrayList<Double> centerYShootingHistory
+      ArrayList<Integer> shooterAngleShootingHistory
+      ExecutorService threadPool
+      NetworkTable table
+      int sizesAreSameCount
+      double[] defaultValue
+      boolean isFinished
+      Aim()
+      void initialize()
+      void execute()
+      static void setBreakOutOfLoopToTrue()
+      void sleep()
+      void sleep(long)
+      Integer getCenterYOfGoal(Map<String,Double[]>)
+      Double getAreaOfGoal(Map<String,Double[]>)
+      Map<String,Double[]> getTableValueMap()
+      void onAimUsingRotatingContinuslyButtonClicked()
+        class <anonymous #1>
+          void run()
+      void determineIfAreaHasNotIncreased()
+      boolean areaHasNotChangedDramatically(double, double)
+      void rotateLeft(int)
+      void rotateRight(int)
+      Integer getCenterXOfGoal(Map<String,Double[]>)
+      void TESTreadValues(String)
+      int findLargestContourPosition(Double[])
+      void rotateToTargetInFixedIncrements()
+      void shootUsingYValue()
+      int getShooterAngleFromCenterY(double)
+      void rotateShooterAngle(int)
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BreakOutOfAimLoop.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class BreakOutOfAimLoop
+      BreakOutOfAimLoop()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:45:16.989
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:45:17.032
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:45:17.033
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:45:30.103
+!MESSAGE Class: ZeroShooter Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:57:56.309
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Timer fireTime
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SetShooterSpeed.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class SetShooterSpeed
+      double rps
+      SetShooterSpeed(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  FireSequence.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class FireSequence
+      FireSequence()
+  [Working copy] ShooterAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ShooterAngle
+      double kP
+      double kI
+      double DB
+      double setpoint
+      Joystick userStick
+      int buttonNum
+      double errorI
+      Timer angleTime
+      double setTime
+      ShooterAngle(double, double)
+      ShooterAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] RobotAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RobotAngle
+      double kP
+      double setpointAngle
+      double currentError
+      Joystick stick
+      int buttonNum
+      Timer angleTime
+      double setTime
+      RobotAngle(double, double)
+      RobotAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Aim.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import java.io.IOException
+    import java.util.ArrayList
+    import java.util.Arrays
+    import java.util.HashMap
+    import java.util.List
+    import java.util.Map
+    import java.util.concurrent.ExecutorService
+    import java.util.concurrent.Executors
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Scheduler
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Aim
+      double HALF_SCREEN
+      double SPEED
+      double CENTERED_TOLERANCE_PIXELS
+      int ANGLE_TOLERANCE_PIXELS
+      int CALIBRATION_DEGREES
+      int CENTER_SCREEN_PIXELS
+      String MY_CONTOURS_REPORT_TABLE_NAME
+      long SLEEP_MILLIS
+      int NO_VALUE
+      List<String> TABLE_NAME_KEYS
+      Double[] DEFAULT_VALUE
+      double PIXEL_TOLERANCE
+      boolean breakOutOfLoop
+      boolean hasButtonBeenClicked
+      boolean areaHasNotIncreasedDramitically
+      ArrayList<Double> centerYShootingHistory
+      ArrayList<Integer> shooterAngleShootingHistory
+      ExecutorService threadPool
+      NetworkTable table
+      int sizesAreSameCount
+      double[] defaultValue
+      boolean isFinished
+      Aim()
+      void initialize()
+      void execute()
+      static void setBreakOutOfLoopToTrue()
+      void sleep()
+      void sleep(long)
+      Integer getCenterYOfGoal(Map<String,Double[]>)
+      Double getAreaOfGoal(Map<String,Double[]>)
+      Map<String,Double[]> getTableValueMap()
+      void onAimUsingRotatingContinuslyButtonClicked()
+        class <anonymous #1>
+          void run()
+      void determineIfAreaHasNotIncreased()
+      boolean areaHasNotChangedDramatically(double, double)
+      void rotateLeft(int)
+      void rotateRight(int)
+      Integer getCenterXOfGoal(Map<String,Double[]>)
+      void TESTreadValues(String)
+      int findLargestContourPosition(Double[])
+      void rotateToTargetInFixedIncrements()
+      void shootUsingYValue()
+      int getShooterAngleFromCenterY(double)
+      void rotateShooterAngle(int)
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BreakOutOfAimLoop.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class BreakOutOfAimLoop
+      BreakOutOfAimLoop()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ZeroShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ZeroShooter
+      ZeroShooter()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:57:56.312
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:57:56.334
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:57:56.336
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-09 23:58:09.034
+!MESSAGE Class: IntakeAngle Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:03:06.483
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Timer fireTime
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SetShooterSpeed.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class SetShooterSpeed
+      double rps
+      SetShooterSpeed(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  FireSequence.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class FireSequence
+      FireSequence()
+  [Working copy] ShooterAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ShooterAngle
+      double kP
+      double kI
+      double DB
+      double setpoint
+      Joystick userStick
+      int buttonNum
+      double errorI
+      Timer angleTime
+      double setTime
+      ShooterAngle(double, double)
+      ShooterAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] RobotAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RobotAngle
+      double kP
+      double setpointAngle
+      double currentError
+      Joystick stick
+      int buttonNum
+      Timer angleTime
+      double setTime
+      RobotAngle(double, double)
+      RobotAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Aim.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import java.io.IOException
+    import java.util.ArrayList
+    import java.util.Arrays
+    import java.util.HashMap
+    import java.util.List
+    import java.util.Map
+    import java.util.concurrent.ExecutorService
+    import java.util.concurrent.Executors
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Scheduler
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Aim
+      double HALF_SCREEN
+      double SPEED
+      double CENTERED_TOLERANCE_PIXELS
+      int ANGLE_TOLERANCE_PIXELS
+      int CALIBRATION_DEGREES
+      int CENTER_SCREEN_PIXELS
+      String MY_CONTOURS_REPORT_TABLE_NAME
+      long SLEEP_MILLIS
+      int NO_VALUE
+      List<String> TABLE_NAME_KEYS
+      Double[] DEFAULT_VALUE
+      double PIXEL_TOLERANCE
+      boolean breakOutOfLoop
+      boolean hasButtonBeenClicked
+      boolean areaHasNotIncreasedDramitically
+      ArrayList<Double> centerYShootingHistory
+      ArrayList<Integer> shooterAngleShootingHistory
+      ExecutorService threadPool
+      NetworkTable table
+      int sizesAreSameCount
+      double[] defaultValue
+      boolean isFinished
+      Aim()
+      void initialize()
+      void execute()
+      static void setBreakOutOfLoopToTrue()
+      void sleep()
+      void sleep(long)
+      Integer getCenterYOfGoal(Map<String,Double[]>)
+      Double getAreaOfGoal(Map<String,Double[]>)
+      Map<String,Double[]> getTableValueMap()
+      void onAimUsingRotatingContinuslyButtonClicked()
+        class <anonymous #1>
+          void run()
+      void determineIfAreaHasNotIncreased()
+      boolean areaHasNotChangedDramatically(double, double)
+      void rotateLeft(int)
+      void rotateRight(int)
+      Integer getCenterXOfGoal(Map<String,Double[]>)
+      void TESTreadValues(String)
+      int findLargestContourPosition(Double[])
+      void rotateToTargetInFixedIncrements()
+      void shootUsingYValue()
+      int getShooterAngleFromCenterY(double)
+      void rotateShooterAngle(int)
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BreakOutOfAimLoop.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class BreakOutOfAimLoop
+      BreakOutOfAimLoop()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ZeroShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ZeroShooter
+      ZeroShooter()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] IntakeAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.subsystems.Intake
+    import edu.wpi.first.wpilibj.command.Command
+    class IntakeAngle
+      boolean isAngled
+      IntakeAngle(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:03:06.483
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:03:06.494
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:03:06.495
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:03:55.910
+!MESSAGE Class: SpinIntake Package: org.usfirst.frc.team6000.robot.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:10:09.339
+!MESSAGE [org.usfirst.frc.team6000.robot.commands [in src [in Team6000-2016]]
+  Fire.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class Fire
+      double targetAngle
+      Timer fireTime
+      Fire(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  ArticulateShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class ArticulateShooter
+      double velocity
+      Joystick joystick
+      int buttonNum
+      ArticulateShooter(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  DriveWithJoysticks.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Subsystem
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  Shoot.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class Shoot
+      double setVelocity
+      Joystick stick
+      int buttonNum
+      Shoot(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  SetShooterSpeed.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Command
+    class SetShooterSpeed
+      double rps
+      SetShooterSpeed(double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  FireSequence.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class FireSequence
+      FireSequence()
+  [Working copy] ShooterAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class ShooterAngle
+      double kP
+      double kI
+      double DB
+      double setpoint
+      Joystick userStick
+      int buttonNum
+      double errorI
+      Timer angleTime
+      double setTime
+      ShooterAngle(double, double)
+      ShooterAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] RobotAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class RobotAngle
+      double kP
+      double setpointAngle
+      double currentError
+      Joystick stick
+      int buttonNum
+      Timer angleTime
+      double setTime
+      RobotAngle(double, double)
+      RobotAngle(double, Joystick, int)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] Aim.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.OI
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import java.io.IOException
+    import java.util.ArrayList
+    import java.util.Arrays
+    import java.util.HashMap
+    import java.util.List
+    import java.util.Map
+    import java.util.concurrent.ExecutorService
+    import java.util.concurrent.Executors
+    import edu.wpi.first.wpilibj.command.Command
+    import edu.wpi.first.wpilibj.command.Scheduler
+    import edu.wpi.first.wpilibj.networktables.NetworkTable
+    import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
+    class Aim
+      double HALF_SCREEN
+      double SPEED
+      double CENTERED_TOLERANCE_PIXELS
+      int ANGLE_TOLERANCE_PIXELS
+      int CALIBRATION_DEGREES
+      int CENTER_SCREEN_PIXELS
+      String MY_CONTOURS_REPORT_TABLE_NAME
+      long SLEEP_MILLIS
+      int NO_VALUE
+      List<String> TABLE_NAME_KEYS
+      Double[] DEFAULT_VALUE
+      double PIXEL_TOLERANCE
+      boolean breakOutOfLoop
+      boolean hasButtonBeenClicked
+      boolean areaHasNotIncreasedDramitically
+      ArrayList<Double> centerYShootingHistory
+      ArrayList<Integer> shooterAngleShootingHistory
+      ExecutorService threadPool
+      NetworkTable table
+      int sizesAreSameCount
+      double[] defaultValue
+      boolean isFinished
+      Aim()
+      void initialize()
+      void execute()
+      static void setBreakOutOfLoopToTrue()
+      void sleep()
+      void sleep(long)
+      Integer getCenterYOfGoal(Map<String,Double[]>)
+      Double getAreaOfGoal(Map<String,Double[]>)
+      Map<String,Double[]> getTableValueMap()
+      void onAimUsingRotatingContinuslyButtonClicked()
+        class <anonymous #1>
+          void run()
+      void determineIfAreaHasNotIncreased()
+      boolean areaHasNotChangedDramatically(double, double)
+      void rotateLeft(int)
+      void rotateRight(int)
+      Integer getCenterXOfGoal(Map<String,Double[]>)
+      void TESTreadValues(String)
+      int findLargestContourPosition(Double[])
+      void rotateToTargetInFixedIncrements()
+      void shootUsingYValue()
+      int getShooterAngleFromCenterY(double)
+      void rotateShooterAngle(int)
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BreakOutOfAimLoop.java
+    package org.usfirst.frc.team6000.robot.commands
+    import edu.wpi.first.wpilibj.command.Command
+    class BreakOutOfAimLoop
+      BreakOutOfAimLoop()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] ZeroShooter.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    class ZeroShooter
+      ZeroShooter()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] IntakeAngle.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import org.usfirst.frc.team6000.robot.subsystems.Intake
+    import edu.wpi.first.wpilibj.command.Command
+    class IntakeAngle
+      boolean isAngled
+      IntakeAngle(boolean)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] SpinIntake.java
+    package org.usfirst.frc.team6000.robot.commands
+    import org.usfirst.frc.team6000.robot.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.Timer
+    import edu.wpi.first.wpilibj.command.Command
+    class SpinIntake
+      double velocity
+      Joystick stick
+      int buttonNum
+      Timer spinTimer
+      double spinTime
+      SpinIntake(double, Joystick, int)
+      SpinIntake(double, double)
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:10:09.341
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:10:09.374
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:10:09.375
+!MESSAGE Project: P/Team6000-2016
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-03-10 00:10:42.280
+!MESSAGE Class: BallIntake Package: org.usfirst.frc.team6000.robot.commands
