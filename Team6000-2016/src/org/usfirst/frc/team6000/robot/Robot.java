@@ -1,6 +1,7 @@
 
 package org.usfirst.frc.team6000.robot;
 
+import org.usfirst.frc.team6000.robot.commands.AutoCommand;
 import org.usfirst.frc.team6000.robot.subsystems.BallPusher;
 import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
@@ -82,18 +83,15 @@ public class Robot extends IterativeRobot {
 	 * or additional comparisons to the switch structure below with additional strings & commands.
 	 */
     public void autonomousInit() {
-      //  autonomousCommand = (Command) chooser.getSelected();
+        autonomousCommand = (Command) chooser.getSelected();
         
-		/* String autoSelected = SmartDashboard.getString("Auto Selector", "Default");
+		String autoSelected = SmartDashboard.getString("Auto Selector", "Default");
 		switch(autoSelected) {
-		case "My Auto":
-			autonomousCommand = new MyAutoCommand();
-			break;
 		case "Default Auto":
 		default:
-			autonomousCommand = new ExampleCommand();
+			autonomousCommand = new AutoCommand();
 			break;
-		} */
+		}
     	
     	// schedule the autonomous command (example)
         if (autonomousCommand != null) autonomousCommand.start();
