@@ -79,6 +79,16 @@ public class DriveTrain extends Subsystem {
         rightMotor.set(0);
     }
     
+    public double getLeftRate()
+    {
+        return leftWheelEncoder.getRate();
+    }
+    
+    public double getRightRate()
+    {
+        return rightWheelEncoder.getRate();
+    }
+    
 	@Override
 	protected void initDefaultCommand() {
 		setDefaultCommand(new DriveWithJoysticks());

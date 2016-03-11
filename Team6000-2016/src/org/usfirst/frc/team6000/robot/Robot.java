@@ -48,9 +48,7 @@ public class Robot extends IterativeRobot {
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
      */
-    public void robotInit() {
-    	RobotMap.leftMotor.setInverted(false);
-    	
+    public void robotInit() {    	
     	driveTrain = new DriveTrain();
     	shooter = new Shooter();
     	shooterArticulator = new ShooterArticulator();
@@ -144,8 +142,8 @@ public class Robot extends IterativeRobot {
         Scheduler.getInstance().run();
         SmartDashboard.putNumber("Encoder_Rate", shooterArticulator.getRate());
         SmartDashboard.putNumber("Encoder_Angle", shooterArticulator.getDistance());
-        SmartDashboard.putNumber("LeftWheelSpeed", RobotMap.leftWheelEncoder.getRate());
-        SmartDashboard.putNumber("RightWheelSpeed", RobotMap.rightWheelEncoder.getRate());
+        SmartDashboard.putNumber("LeftWheelSpeed", driveTrain.getLeftRate());
+        SmartDashboard.putNumber("RightWheelSpeed", driveTrain.getRightRate());
         SmartDashboard.putBoolean("Shooter_Zero", shooterArticulator.isZero());
         
        if (RobotMap.ahrs != null) SmartDashboard.putNumber("Robot_Angle", RobotMap.ahrs.getYaw());
