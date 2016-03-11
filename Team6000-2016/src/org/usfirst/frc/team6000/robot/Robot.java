@@ -6,18 +6,13 @@ import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 import org.usfirst.frc.team6000.robot.subsystems.ShooterArticulator;
 import org.usfirst.frc.team6000.robot.subsystems.Intake;
-
 import com.kauailabs.navx.frc.AHRS;
-
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.SPI;
-import edu.wpi.first.wpilibj.SerialPort;
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import edu.wpi.first.wpilibj.networktables.NetworkTable;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -41,6 +36,8 @@ public class Robot extends IterativeRobot {
 	public static Intake intake;
 	public static OI oi;
 
+	public static AHRS ahrs;
+	
     Command autonomousCommand;
     SendableChooser chooser;
 
@@ -56,7 +53,7 @@ public class Robot extends IterativeRobot {
     	intake = new Intake();
     	oi = new OI();
 		try {
-			RobotMap.ahrs =  new AHRS(SPI.Port.kMXP);
+			ahrs =  new AHRS(SPI.Port.kMXP);
 		} catch (RuntimeException ex) {
 			 DriverStation.reportError("Error instantiating navX-MXP:  " + ex.getMessage(), true);
 		}
@@ -132,7 +129,6 @@ public class Robot extends IterativeRobot {
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
             shooterArticulator.resetDistance();
-            RobotMap.ahrs.reset();
         }
 
     /**
@@ -146,7 +142,7 @@ public class Robot extends IterativeRobot {
         SmartDashboard.putNumber("RightWheelSpeed", driveTrain.getRightRate());
         SmartDashboard.putBoolean("Shooter_Zero", shooterArticulator.isZero());
         
-       if (RobotMap.ahrs != null) SmartDashboard.putNumber("Robot_Angle", RobotMap.ahrs.getYaw());
+       if (ahrs != null) SmartDashboard.putNumber("Robot_Angle", ahrs.getYaw());
        
        if (!shooterArticulator.isZero())
            shooterArticulator.resetDistance();

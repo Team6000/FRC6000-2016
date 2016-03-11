@@ -73,6 +73,12 @@ public class DriveTrain extends Subsystem {
     	rightMotor.set(KfRight*inchesPerSecond + KpRight*error);
     }
     
+    public void rawDrive(double left, double right)
+    {
+        leftMotor.set(left);
+        rightMotor.set(right);
+    }
+    
     public void stop()
     {
         leftMotor.set(0);
