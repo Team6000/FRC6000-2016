@@ -34,11 +34,11 @@ public class Robot extends IterativeRobot {
 	public static double I;
 	public static double D;
 	
-	public static final DriveTrain DriveTrain = new DriveTrain();
-	public static final Shooter Shooter = new Shooter();
-	public static final ShooterArticulator ShooterArticulator = new ShooterArticulator();
-	public static final BallPusher BallPusher = new BallPusher();
-	public static final Intake Intake = new Intake();
+	public static DriveTrain driveTrain;
+	public static Shooter shooter;
+	public static ShooterArticulator shooterArticulator;
+	public static BallPusher ballPusher;
+	public static Intake intake;
 	public static OI oi;
 
     Command autonomousCommand;
@@ -49,7 +49,14 @@ public class Robot extends IterativeRobot {
      * used for any initialization code.
      */
     public void robotInit() {
-		oi = new OI();
+    	RobotMap.leftMotor.setInverted(false);
+    	
+    	driveTrain = new DriveTrain();
+    	shooter = new Shooter();
+    	shooterArticulator = new ShooterArticulator();
+    	ballPusher = new BallPusher();
+    	intake = new Intake();
+    	oi = new OI();
 		try {
 			RobotMap.ahrs =  new AHRS(SPI.Port.kMXP);
 		} catch (RuntimeException ex) {
@@ -145,9 +152,13 @@ public class Robot extends IterativeRobot {
         SmartDashboard.putNumber("Encoder_Angle", RobotMap.articulatorEncoder.getDistance());
         SmartDashboard.putNumber("LeftWheelSpeed", RobotMap.leftWheelEncoder.getRate());
         SmartDashboard.putNumber("RightWheelSpeed", RobotMap.rightWheelEncoder.getRate());
-        
+        SmartDashboard.putBoolean("Shooter_Zero", !RobotMap.shooterZero.get());
         
        if (RobotMap.ahrs != null) SmartDashboard.putNumber("Robot_Angle", RobotMap.ahrs.getYaw());
+       
+       if (!RobotMap.shooterZero.get()) {
+    	   RobotMap.articulatorEncoder.reset();
+       }
     }
     
     /**

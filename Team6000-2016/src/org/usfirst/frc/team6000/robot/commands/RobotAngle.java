@@ -25,7 +25,7 @@ public class RobotAngle extends Command {
 	private double setTime;
 	
 	public RobotAngle(double s, double t) {
-		requires(Robot.DriveTrain);
+		requires(Robot.driveTrain);
 		
 		setTime = t;
 		setpointAngle = s;
@@ -37,7 +37,7 @@ public class RobotAngle extends Command {
     public RobotAngle(double s, Joystick j, int n) {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	requires(Robot.DriveTrain);
+    	requires(Robot.driveTrain);
     	setpointAngle = s;
     	stick = j;
     	buttonNum = n;
@@ -53,7 +53,7 @@ public class RobotAngle extends Command {
     protected void execute() {
     	
     	currentError = setpointAngle - RobotMap.ahrs.getYaw();
-    	Robot.DriveTrain.rotate(kP * currentError);
+    	Robot.driveTrain.rotate(kP * currentError);
     	
     }
 
@@ -68,7 +68,7 @@ public class RobotAngle extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.DriveTrain.rotate(0.0);
+    	Robot.driveTrain.rotate(0.0);
     }
 
     // Called when another command which requires one or more of the same

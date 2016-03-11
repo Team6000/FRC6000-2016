@@ -12,9 +12,11 @@ public class Intake extends Subsystem {
   
 	public static void anglePickup(boolean isAngled) {
 		if (isAngled) {
-			RobotMap.intakeAngler.set(DoubleSolenoid.Value.kForward);
+			RobotMap.intakeAnglerLeft.set(DoubleSolenoid.Value.kForward);
+			RobotMap.intakeAnglerRight.set(DoubleSolenoid.Value.kForward);
 		} else {
-			RobotMap.intakeAngler.set(DoubleSolenoid.Value.kReverse);
+			RobotMap.intakeAnglerLeft.set(DoubleSolenoid.Value.kReverse);
+			RobotMap.intakeAnglerRight.set(DoubleSolenoid.Value.kReverse);
 		}
 	}
 	

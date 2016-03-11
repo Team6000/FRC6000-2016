@@ -20,7 +20,11 @@ public class DriveTrain extends Subsystem {
 	private static double KfLeft = 0.0064;
 	private static double KpLeft = 0.003;
 	
+	RobotDrive robotDrive;
+	
 	public DriveTrain() {
+		robotDrive = new RobotDrive(makeInverted(RobotMap.leftMotor), makeInverted(RobotMap.rightMotor));
+		
 		RobotMap.leftWheelEncoder.setMaxPeriod(0.1);
 		RobotMap.leftWheelEncoder.setMinRate(10);
 		RobotMap.leftWheelEncoder.setDistancePerPulse(18.85/360);
@@ -36,8 +40,6 @@ public class DriveTrain extends Subsystem {
     	 victor.setInverted(true);
     	 return victor;
     }
-    
-    RobotDrive robotDrive = new RobotDrive(makeInverted(RobotMap.leftMotor), makeInverted(RobotMap.rightMotor));
     
     
     public void drive(){

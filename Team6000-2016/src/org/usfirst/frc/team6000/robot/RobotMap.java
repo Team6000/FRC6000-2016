@@ -33,10 +33,11 @@ public class RobotMap {
     public static Servo fireServo = new Servo(5);
     public static Encoder articulatorEncoder = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
     
-    public static DigitalInput shooterZero = new DigitalInput(0);
+    public static DigitalInput shooterZero = new DigitalInput(10); //NOT THE ISSUE
     
-    public static DoubleSolenoid intakeAngler = new DoubleSolenoid(0, 1);
-    public static Victor intakeWheels = new Victor(5);
+    public static DoubleSolenoid intakeAnglerLeft = new DoubleSolenoid(1, 2);
+    public static DoubleSolenoid intakeAnglerRight = new DoubleSolenoid(3, 4);
+    public static Victor intakeWheels = new Victor(6);
     
     public static AHRS ahrs;
     

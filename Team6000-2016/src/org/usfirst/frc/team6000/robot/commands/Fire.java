@@ -1,5 +1,8 @@
 package org.usfirst.frc.team6000.robot.commands;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.usfirst.frc.team6000.robot.Robot;
 import org.usfirst.frc.team6000.robot.RobotMap;
 
@@ -15,7 +18,7 @@ public class Fire extends Command {
 	
     public Fire(double angle) {
     	targetAngle = angle;
-    	requires(Robot.BallPusher);
+    	requires(Robot.ballPusher);
     	fireTime = new Timer();
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
@@ -23,9 +26,10 @@ public class Fire extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	
     	fireTime.reset();
     	fireTime.start();
-    	Robot.BallPusher.setServoAngle(targetAngle);
+    	Robot.ballPusher.setServoAngle(targetAngle);
     	
     	
     }

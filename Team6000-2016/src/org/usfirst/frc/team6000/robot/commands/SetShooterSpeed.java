@@ -13,15 +13,15 @@ public class SetShooterSpeed extends Command {
 	private double rps;
 
     public SetShooterSpeed(double s) {
-    	requires(Robot.Shooter);
+    	requires(Robot.shooter);
     	rps = s;
        
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.Shooter.setSetpointLeft(rps);
-    	Robot.Shooter.setSetpointRight(-rps);
+    	Robot.shooter.setSetpointLeft(rps);
+    	Robot.shooter.setSetpointRight(-rps);
     }
 
     // Called repeatedly when this Command is scheduled to run

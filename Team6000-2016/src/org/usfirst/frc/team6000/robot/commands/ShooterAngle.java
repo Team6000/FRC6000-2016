@@ -13,7 +13,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class ShooterAngle extends Command {
 
-	private static final double kP = 0.02;
+	private static final double kP = 0.019;
 	private static final double kI = 0.00012;
 	private static final double DB = 0.2;
 	
@@ -40,7 +40,7 @@ public class ShooterAngle extends Command {
 		setpoint = setpoint > 90 ? 90 : setpoint;
 		
 		errorI = 0;
-		requires(Robot.ShooterArticulator);
+		requires(Robot.shooterArticulator);
 		
 		angleTime.reset();
 		angleTime.start();
@@ -54,7 +54,7 @@ public class ShooterAngle extends Command {
         
         if (setpoint > 90) setpoint = 90;
         
-        requires(Robot.ShooterArticulator);
+        requires(Robot.shooterArticulator);
         
         
         
@@ -62,6 +62,7 @@ public class ShooterAngle extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -72,13 +73,16 @@ public class ShooterAngle extends Command {
     		errorI = errorI + kI*errorP;
     	}
     	
+    	if (Math.abs(errorI) > 1) {
+    		errorI = Math.signum(errorI) * 1;
+    	}
     	
     	
     	
     	
     	SmartDashboard.putNumber("Error_I", errorI);
     	
-    	Robot.ShooterArticulator.rotate(kP*errorP + errorI);
+    	Robot.shooterArticulator.rotate(kP*errorP + errorI);
     	
     	
     }
@@ -100,7 +104,7 @@ public class ShooterAngle extends Command {
     		angleTime.stop();
     		angleTime.reset();
     	}
-    	Robot.ShooterArticulator.rotate(0.0);
+    	Robot.shooterArticulator.rotate(0.0);
     }
 
     // Called when another command which requires one or more of the same

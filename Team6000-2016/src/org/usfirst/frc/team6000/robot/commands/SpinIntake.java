@@ -22,13 +22,13 @@ public class SpinIntake extends Command {
        velocity = s;
        stick = j;
        buttonNum = b;
-       requires(Robot.Intake);
+       requires(Robot.intake);
     }
     
     public SpinIntake(double s, double t) {
     	velocity = s;
     	spinTime = t;
-    	requires(Robot.Intake);
+    	requires(Robot.intake);
     	
     	spinTimer = new Timer();
     	
@@ -40,7 +40,7 @@ public class SpinIntake extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.Intake.spinPickup(velocity);
+    	Robot.intake.spinPickup(velocity);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -54,7 +54,7 @@ public class SpinIntake extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.Intake.spinPickup(0.0);
+    	Robot.intake.spinPickup(0.0);
     }
 
     // Called when another command which requires one or more of the same

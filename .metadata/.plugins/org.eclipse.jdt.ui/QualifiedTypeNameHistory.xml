@@ -4,10 +4,7 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive.MotorType"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Servo"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.Fire"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.FireSequence"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.ShooterAngle"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.SetShooterSpeed"/>
@@ -17,13 +14,22 @@
 <fullyQualifiedTypeName name="com.kauailabs.navx.frc.AHRS"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.SPI"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.SPI.Port"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.RobotMap"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.RobotAngle"/>
-<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.Robot"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.networktables.NetworkTable"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.Aim"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.BreakOutOfAimLoop"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DigitalInput"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid.Value"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.RobotMap"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.Robot"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.BallIntake"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.ShooterAngle"/>
+<fullyQualifiedTypeName name="org.usfirst.frc.team6000.robot.commands.Fire"/>
 </qualifiedTypeNameHistroy>

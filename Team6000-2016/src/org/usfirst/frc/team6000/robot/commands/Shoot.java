@@ -16,7 +16,7 @@ public class Shoot extends Command {
 	
     public Shoot(double v, Joystick s, int num) {
         // Use requires() here to declare subsystem dependencies
-        requires(Robot.Shooter);
+        requires(Robot.shooter);
         setVelocity = v;
         stick = s;
         buttonNum = num;
@@ -29,7 +29,7 @@ public class Shoot extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.Shooter.roughShoot(setVelocity);
+    	Robot.shooter.roughShoot(setVelocity);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -39,7 +39,7 @@ public class Shoot extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.Shooter.roughShoot(0.0);
+    	Robot.shooter.roughShoot(0.0);
     	
     }
 

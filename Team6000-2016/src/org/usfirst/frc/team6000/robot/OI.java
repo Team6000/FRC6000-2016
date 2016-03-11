@@ -14,10 +14,12 @@ import org.usfirst.frc.team6000.robot.commands.BreakOutOfAimLoop;
 import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
 import org.usfirst.frc.team6000.robot.commands.Fire;
 import org.usfirst.frc.team6000.robot.commands.FireSequence;
+import org.usfirst.frc.team6000.robot.commands.IntakeAngle;
 import org.usfirst.frc.team6000.robot.commands.RobotAngle;
 import org.usfirst.frc.team6000.robot.commands.SetShooterSpeed;
 import org.usfirst.frc.team6000.robot.commands.Shoot;
 import org.usfirst.frc.team6000.robot.commands.ShooterAngle;
+import org.usfirst.frc.team6000.robot.commands.ZeroShooter;
 import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 
@@ -50,11 +52,15 @@ public class OI {
 	Button button9 = new JoystickButton(leftStick,9);
 	Button button1 = new JoystickButton(leftStick, 1);
     
+	Button shootButton0 = new JoystickButton(shooterPad, 0);
 	Button shootButton1 = new JoystickButton(shooterPad, 1);
 	Button shootButton2 = new JoystickButton(shooterPad, 2);
 	Button shootButton3 = new JoystickButton(shooterPad, 3);
 	Button shootButton4 = new JoystickButton(shooterPad, 4);
-	Button shootButton5 = new JoystickButton(shooterPad, 5);
+	Button shootButton5 = new JoystickButton(shooterPad, 7);
+	
+	Button intakeDown = new JoystickButton(shooterPad, 5);
+	Button intakeUp = new JoystickButton(shooterPad, 6);
 	
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to
@@ -69,20 +75,26 @@ public class OI {
     // button.whenPressed(new ExampleCommand());
 	public OI(){
 		
-		shootButton3.whenPressed(new BallIntake(-0.5, shooterPad, 3));
-		shootButton5.whenPressed(new BallIntake(0.5, shooterPad, 5));
-		shootButton4.whileHeld(new SetShooterSpeed(-90.0));
+//shootButton4.whenPressed(new BallIntake(-0.75, shooterPad, 4));
+//shootButton5.whenPressed(new BallIntake(0.5, shooterPad, 5));
+		shootButton2.whileHeld(new SetShooterSpeed(-90.0));
+		shootButton1.whenPressed(new FireSequence());
+		shootButton3.whenPressed(new ZeroShooter());
 		
-		button4.whenPressed(new ArticulateShooter(0.25, leftStick, 4));
-		button6.whenPressed(new ArticulateShooter(-0.25, leftStick, 6));
+//		button4.whenPressed(new ArticulateShooter(0.25, leftStick, 4));
+//		button6.whenPressed(new ArticulateShooter(-0.25, leftStick, 6));
 		
-		shootButton2.whenPressed(new FireSequence());
-		shootButton1.whenPressed(new ShooterAngle(70, shooterPad, 8));
+		
+		
+		shootButton4.whenPressed(new ShooterAngle(55, shooterPad, 4));
 		
 		button12.whenPressed(new RobotAngle(85, leftStick, 12));
 		
 //		button9.whenPressed(new Aim());
 		button1.whenPressed(new BreakOutOfAimLoop());
+		
+		intakeUp.whenPressed(new IntakeAngle(false));
+		intakeDown.whenPressed(new BallIntake(-.75, shooterPad, 5));
 		
 	}
 

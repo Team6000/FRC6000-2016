@@ -26,7 +26,6 @@ public class Aim extends Command {
 	private static final double SPEED = 0.15;
 	private static final double CENTERED_TOLERANCE_PIXELS = 10.0;
 	// private static final double NO_VALUE = Double.NEGATIVE_INFINITY;
-	private final static int ANGLE_TOLERANCE_PIXELS = 10;
 	private final static int CALIBRATION_DEGREES = 5;
 	private final static int CENTER_SCREEN_PIXELS = 224;
 	private final static String MY_CONTOURS_REPORT_TABLE_NAME = "GRIP/myContoursReport";
@@ -35,13 +34,13 @@ public class Aim extends Command {
 	private static final int NO_VALUE = Integer.MIN_VALUE;
 	private static final List<String> TABLE_NAME_KEYS = Arrays.asList("area", "centerX", "centerY");
 	private static final Double[] DEFAULT_VALUE = new Double[0];
-	private static final double PIXEL_TOLERANCE = 5;
+	private static final double PIXEL_TOLERANCE = 3;
 	public static boolean breakOutOfLoop = false;
 
 	public volatile boolean hasButtonBeenClicked = false;
 	public volatile boolean areaHasNotIncreasedDramitically;
-	public ArrayList<Double> centerYShootingHistory = new ArrayList();
-	public ArrayList<Integer> shooterAngleShootingHistory = new ArrayList();
+	public static ArrayList<Double> centerYShootingHistory = new ArrayList();
+	public static ArrayList<Integer> shooterAngleShootingHistory = new ArrayList();
 
 	ExecutorService threadPool = Executors.newCachedThreadPool();
 
@@ -53,7 +52,7 @@ public class Aim extends Command {
 	public Aim() {
 		// Use requires() here to declare subsystem dependencies
 		// eg. requires(chassis);
-		requires(Robot.DriveTrain);
+		requires(Robot.driveTrain);
 	}
 
 	// Called just before this Command runs the first time
@@ -103,7 +102,7 @@ public class Aim extends Command {
 		return areaArray[position];
 	}
 
-	private Map<String, Double[]> getTableValueMap() {
+	public Map<String, Double[]> getTableValueMap() {
 		Map<String, Double[]> map = new HashMap<>();
 		for (String key : TABLE_NAME_KEYS) {
 			map.put(key, table.getNumberArray(key, DEFAULT_VALUE));
@@ -268,9 +267,15 @@ public class Aim extends Command {
 			System.out.println(centerX);
 			sleep(100);
 		}
-		System.out.println("STOP, AT TARGET");
-		//TODO
-		shootUsingYValue();
+		if (breakOutOfLoop == false) {	
+			System.out.println("STOP, AT TARGET");
+			//TODO check with Seiji if right
+			RobotMap.leftMotor.set(0.0);
+			RobotMap.rightMotor.set(0.0);
+			shootUsingYValue();
+		} else {
+			breakOutOfLoop = false;
+		}
 	}
 
 	public void shootUsingYValue() {
@@ -278,10 +283,11 @@ public class Aim extends Command {
 		double centerY = getCenterYOfGoal(map);
 		SmartDashboard.putNumber("centerY", centerY);
 		int shooterAngle = getShooterAngleFromCenterY(centerY);
-		centerYShootingHistory.add(centerY);
-		shooterAngleShootingHistory.add(shooterAngle);
+		//centerYShootingHistory.add(centerY);
+		//shooterAngleShootingHistory.add(shooterAngle);
 		rotateShooterAngle(shooterAngle);
-		//TODO fire
+		//TODO check with Seiji if right
+		// TODO Scheduler.getInstance().add(new Fire(90));
 	}
 
 	private int getShooterAngleFromCenterY(double centerY) {
@@ -290,7 +296,8 @@ public class Aim extends Command {
 	}
 
 	private void rotateShooterAngle(int shooterAngle) {
-		//TODO 
+		//TODO check if this is right with Seiji
+		Scheduler.getInstance().add(new ShooterAngle(shooterAngle, 1));
 	}
 
 	// Make this return true when this Command no longer needs to run execute()

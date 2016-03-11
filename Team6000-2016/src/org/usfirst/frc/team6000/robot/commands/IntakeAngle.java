@@ -14,12 +14,12 @@ public class IntakeAngle extends Command {
 	
     public IntakeAngle(boolean a) {
         isAngled = a;
-        requires(Robot.Intake);
+        requires(Robot.intake);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.Intake.anglePickup(isAngled);
+    	Robot.intake.anglePickup(isAngled);
     }
 
     // Called repeatedly when this Command is scheduled to run
