@@ -1,11 +1,10 @@
 package org.usfirst.frc.team6000.robot.subsystems;
 
+import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
-
 import org.usfirst.frc.team6000.robot.OI;
-import org.usfirst.frc.team6000.robot.Robot;
 import org.usfirst.frc.team6000.robot.RobotMap;
 import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
 
@@ -20,20 +19,31 @@ public class DriveTrain extends Subsystem {
 	private static double KfLeft = 0.0064;
 	private static double KpLeft = 0.003;
 	
-	RobotDrive robotDrive;
+	private Victor leftMotor;
+	private Victor rightMotor;
+	private Encoder leftWheelEncoder;
+	private Encoder rightWheelEncoder;
+	
+	private RobotDrive robotDrive;
 	
 	public DriveTrain() {
-		robotDrive = new RobotDrive(makeInverted(RobotMap.leftMotor), makeInverted(RobotMap.rightMotor));
+	    leftMotor = new Victor(RobotMap.DRIVE_LEFT);
+	    rightMotor = new Victor(RobotMap.DRIVE_RIGHT);
+	    
+	    leftWheelEncoder = new Encoder(RobotMap.DRIVE_ENCODER_LEFT_A, RobotMap.DRIVE_ENCODER_LEFT_B, true, Encoder.EncodingType.k2X);
+	    rightWheelEncoder = new Encoder(RobotMap.DRIVE_ENCODER_RIGHT_A, RobotMap.DRIVE_ENCODER_RIGHT_B, true, Encoder.EncodingType.k2X);
+	    
+		robotDrive = new RobotDrive(makeInverted(leftMotor), makeInverted(rightMotor));
 		
-		RobotMap.leftWheelEncoder.setMaxPeriod(0.1);
-		RobotMap.leftWheelEncoder.setMinRate(10);
-		RobotMap.leftWheelEncoder.setDistancePerPulse(18.85/360);
-		RobotMap.leftWheelEncoder.setSamplesToAverage(50);
+		leftWheelEncoder.setMaxPeriod(0.1);
+		leftWheelEncoder.setMinRate(10);
+		leftWheelEncoder.setDistancePerPulse(18.85/360);
+		leftWheelEncoder.setSamplesToAverage(50);
 		
-		RobotMap.rightWheelEncoder.setMaxPeriod(0.1);
-		RobotMap.rightWheelEncoder.setMinRate(10);
-		RobotMap.rightWheelEncoder.setDistancePerPulse(18.85/360);
-		RobotMap.rightWheelEncoder.setSamplesToAverage(50);
+		rightWheelEncoder.setMaxPeriod(0.1);
+		rightWheelEncoder.setMinRate(10);
+		rightWheelEncoder.setDistancePerPulse(18.85/360);
+		rightWheelEncoder.setSamplesToAverage(50);
 	}
     
     public Victor makeInverted(Victor victor){
@@ -49,18 +59,24 @@ public class DriveTrain extends Subsystem {
     
     
     public void rotate(double speed) {
-    	RobotMap.leftMotor.set(-speed);
-    	RobotMap.rightMotor.set(-speed);
+    	leftMotor.set(-speed);
+    	rightMotor.set(-speed);
     }
 	
     public void leftDrive(double inchesPerSecond) {
-    	double error = inchesPerSecond - RobotMap.leftWheelEncoder.getRate();
-    	RobotMap.leftMotor.set(-KfLeft*inchesPerSecond - KpLeft*error);
+    	double error = inchesPerSecond - leftWheelEncoder.getRate();
+    	leftMotor.set(-KfLeft*inchesPerSecond - KpLeft*error);
     }
     
     public void rightDrive(double inchesPerSecond) {
-    	double error = inchesPerSecond - RobotMap.rightWheelEncoder.getRate();
-    	RobotMap.rightMotor.set(KfRight*inchesPerSecond + KpRight*error);
+    	double error = inchesPerSecond - rightWheelEncoder.getRate();
+    	rightMotor.set(KfRight*inchesPerSecond + KpRight*error);
+    }
+    
+    public void stop()
+    {
+        leftMotor.set(0);
+        rightMotor.set(0);
     }
     
 	@Override

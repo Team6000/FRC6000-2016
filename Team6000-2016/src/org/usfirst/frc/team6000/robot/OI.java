@@ -5,23 +5,15 @@ import edu.wpi.first.wpilibj.Joystick;
 
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import edu.wpi.first.wpilibj.command.Command;
-
-import org.usfirst.frc.team6000.robot.commands.Aim;
-import org.usfirst.frc.team6000.robot.commands.ArticulateShooter;
 import org.usfirst.frc.team6000.robot.commands.BallIntake;
 import org.usfirst.frc.team6000.robot.commands.BreakOutOfAimLoop;
-import org.usfirst.frc.team6000.robot.commands.DriveWithJoysticks;
-import org.usfirst.frc.team6000.robot.commands.Fire;
 import org.usfirst.frc.team6000.robot.commands.FireSequence;
 import org.usfirst.frc.team6000.robot.commands.IntakeAngle;
 import org.usfirst.frc.team6000.robot.commands.RobotAngle;
 import org.usfirst.frc.team6000.robot.commands.SetShooterSpeed;
-import org.usfirst.frc.team6000.robot.commands.Shoot;
 import org.usfirst.frc.team6000.robot.commands.ShooterAngle;
 import org.usfirst.frc.team6000.robot.commands.ZeroShooter;
-import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
-import org.usfirst.frc.team6000.robot.subsystems.Shooter;
+import org.usfirst.frc.team6000.robot.subsystems.Intake;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -93,7 +85,7 @@ public class OI {
 //		button9.whenPressed(new Aim());
 		button1.whenPressed(new BreakOutOfAimLoop());
 		
-		intakeUp.whenPressed(new IntakeAngle(false));
+		intakeUp.whenPressed(new IntakeAngle(Intake.IntakeAngle.UP));
 		intakeDown.whenPressed(new BallIntake(-.75, shooterPad, 5));
 		
 	}

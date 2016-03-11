@@ -1,9 +1,7 @@
 package org.usfirst.frc.team6000.robot.commands;
 
-import org.usfirst.frc.team6000.robot.OI;
 import org.usfirst.frc.team6000.robot.Robot;
 import org.usfirst.frc.team6000.robot.RobotMap;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -270,8 +268,7 @@ public class Aim extends Command {
 		if (breakOutOfLoop == false) {	
 			System.out.println("STOP, AT TARGET");
 			//TODO check with Seiji if right
-			RobotMap.leftMotor.set(0.0);
-			RobotMap.rightMotor.set(0.0);
+			Robot.driveTrain.stop();
 			shootUsingYValue();
 		} else {
 			breakOutOfLoop = false;

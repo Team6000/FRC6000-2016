@@ -1,8 +1,6 @@
 package org.usfirst.frc.team6000.robot.commands;
 
 import org.usfirst.frc.team6000.robot.Robot;
-import org.usfirst.frc.team6000.robot.RobotMap;
-
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
@@ -25,13 +23,13 @@ public class ZeroShooter extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-       return !RobotMap.shooterZero.get();
+       return Robot.shooterArticulator.isZero();
     }
 
     // Called once after isFinished returns true
     protected void end() {
     	Robot.shooterArticulator.rotate(0.0);
-    	RobotMap.articulatorEncoder.reset();
+    	Robot.shooterArticulator.resetDistance();
     }
 
     // Called when another command which requires one or more of the same

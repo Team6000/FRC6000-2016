@@ -3,6 +3,7 @@ package org.usfirst.frc.team6000.robot.subsystems;
 import org.usfirst.frc.team6000.robot.RobotMap;
 import org.usfirst.frc.team6000.robot.commands.SetShooterSpeed;
 
+import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -12,45 +13,55 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Shooter extends Subsystem {
     
+    private Victor leftShooterMotor;
+    private Victor rightShooterMotor;
+    private Encoder leftShooterEncoder;
+    private Encoder rightShooterEncoder;
+    
 	public Shooter() {
-		RobotMap.leftShooterEncoder.setMaxPeriod(0.1);
-		RobotMap.leftShooterEncoder.setMinRate(10);
-		RobotMap.leftShooterEncoder.setDistancePerPulse(1.0/1024.0);
-		RobotMap.leftShooterEncoder.setSamplesToAverage(50);
+	    leftShooterMotor = new Victor(RobotMap.SHOOTER_MOTOR_LEFT);
+	    rightShooterMotor = new Victor(RobotMap.SHOOTER_MOTOR_RIGHT);
+	    
+	    leftShooterEncoder = new Encoder(RobotMap.SHOOTER_ENCODER_LEFT_A, RobotMap.SHOOTER_ENCODER_LEFT_B, false, Encoder.EncodingType.k2X);
+	    rightShooterEncoder = new Encoder(RobotMap.SHOOTER_ENCODER_RIGHT_A, RobotMap.SHOOTER_ENCODER_RIGHT_B, true, Encoder.EncodingType.k2X);
+	    
+		leftShooterEncoder.setMaxPeriod(0.1);
+		leftShooterEncoder.setMinRate(10);
+		leftShooterEncoder.setDistancePerPulse(1.0/1024.0);
+		leftShooterEncoder.setSamplesToAverage(50);
 		
-		RobotMap.rightShooterEncoder.setMaxPeriod(0.1);
-		RobotMap.rightShooterEncoder.setMinRate(10);
-		RobotMap.rightShooterEncoder.setDistancePerPulse(1.0/1024.0);
-		RobotMap.rightShooterEncoder.setSamplesToAverage(50);
+		rightShooterEncoder.setMaxPeriod(0.1);
+		rightShooterEncoder.setMinRate(10);
+		rightShooterEncoder.setDistancePerPulse(1.0/1024.0);
+		rightShooterEncoder.setSamplesToAverage(50);
 	}
     
-    public void roughShoot(double speed){
-    	RobotMap.leftShooterMotor.set(-speed);
-    	RobotMap.rightShooterMotor.set(speed);
+    public void rawShoot(double speed){
+        leftShooterMotor.set(-speed);
+    	rightShooterMotor.set(speed);
     	
-    	SmartDashboard.putNumber("LeftShooterSpeed", RobotMap.leftShooterEncoder.getRate());
-    	SmartDashboard.putNumber("RightShooterSpeed", RobotMap.rightShooterEncoder.getRate());
+    	SmartDashboard.putNumber("LeftShooterSpeed", leftShooterEncoder.getRate());
+    	SmartDashboard.putNumber("RightShooterSpeed", rightShooterEncoder.getRate());
     }
 
     
-    public void setSetpointLeft(double rps) {
-    	if (Math.abs(RobotMap.leftShooterEncoder.getRate()) < Math.abs(rps)) {
-    		RobotMap.leftShooterMotor.set(Math.signum(rps) * 1.0);
-    		
+    public void setLeft(double rps) {
+    	if (Math.abs(leftShooterEncoder.getRate()) < Math.abs(rps)) {
+    		leftShooterMotor.set(Math.signum(rps) * 1.0);
     	} else {
-    		RobotMap.leftShooterMotor.set(0.0);
+    		leftShooterMotor.set(0.0);
     	}
-    	SmartDashboard.putNumber("LeftShooterSpeed", RobotMap.leftShooterEncoder.getRate());
+    	SmartDashboard.putNumber("LeftShooterSpeed", leftShooterEncoder.getRate());
     }
     
-    public void setSetpointRight(double rps) {
-    	if (Math.abs(RobotMap.rightShooterEncoder.getRate()) < Math.abs(rps)) {
-    		RobotMap.rightShooterMotor.set(Math.signum(rps) * 1.0);
+    public void setRight(double rps) {
+    	if (Math.abs(rightShooterEncoder.getRate()) < Math.abs(rps)) {
+    		rightShooterMotor.set(Math.signum(rps) * 1.0);
     		
     	} else {
-    		RobotMap.rightShooterMotor.set(0.0);
+    		rightShooterMotor.set(0.0);
     	}
-    	SmartDashboard.putNumber("RightShooterSpeed", RobotMap.rightShooterEncoder.getRate());
+    	SmartDashboard.putNumber("RightShooterSpeed", rightShooterEncoder.getRate());
     }
     
     public void initDefaultCommand() {

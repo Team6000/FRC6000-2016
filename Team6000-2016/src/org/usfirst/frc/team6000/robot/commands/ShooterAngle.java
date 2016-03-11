@@ -1,8 +1,6 @@
 package org.usfirst.frc.team6000.robot.commands;
 
 import org.usfirst.frc.team6000.robot.Robot;
-import org.usfirst.frc.team6000.robot.RobotMap;
-
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
@@ -17,8 +15,6 @@ public class ShooterAngle extends Command {
 	private static final double kI = 0.00012;
 	private static final double DB = 0.2;
 	
-	
-	
 	private double setpoint;
 	private Joystick userStick;
 	private int buttonNum;
@@ -29,9 +25,6 @@ public class ShooterAngle extends Command {
 	private double setTime;
 	
 	public ShooterAngle(double s, double t) {
-		
-		
-		
 		angleTime = new Timer();
 		
 		setTime = t;
@@ -55,9 +48,6 @@ public class ShooterAngle extends Command {
         if (setpoint > 90) setpoint = 90;
         
         requires(Robot.shooterArticulator);
-        
-        
-        
     }
 
     // Called just before this Command runs the first time
@@ -67,7 +57,7 @@ public class ShooterAngle extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	double errorP = setpoint - RobotMap.articulatorEncoder.getDistance();
+    	double errorP = setpoint - Robot.shooterArticulator.getDistance();
     	
     	if (Math.abs(errorP) > 0.75) {
     		errorI = errorI + kI*errorP;
@@ -77,14 +67,9 @@ public class ShooterAngle extends Command {
     		errorI = Math.signum(errorI) * 1;
     	}
     	
-    	
-    	
-    	
     	SmartDashboard.putNumber("Error_I", errorI);
     	
     	Robot.shooterArticulator.rotate(kP*errorP + errorI);
-    	
-    	
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -94,7 +79,6 @@ public class ShooterAngle extends Command {
         } else {
         	return angleTime.get() >= setTime;
         }
-        
     }
 
     // Called once after isFinished returns true

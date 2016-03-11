@@ -1,11 +1,7 @@
 package org.usfirst.frc.team6000.robot.commands;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.usfirst.frc.team6000.robot.Robot;
-import org.usfirst.frc.team6000.robot.RobotMap;
-
+import org.usfirst.frc.team6000.robot.subsystems.BallPusher;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 
@@ -13,11 +9,11 @@ import edu.wpi.first.wpilibj.command.Command;
  *
  */
 public class Fire extends Command {
-	double targetAngle;
+	BallPusher.State targetState;
 	Timer fireTime;
 	
-    public Fire(double angle) {
-    	targetAngle = angle;
+    public Fire(BallPusher.State s) {
+        targetState = s;
     	requires(Robot.ballPusher);
     	fireTime = new Timer();
         // Use requires() here to declare subsystem dependencies
@@ -29,7 +25,7 @@ public class Fire extends Command {
     	
     	fireTime.reset();
     	fireTime.start();
-    	Robot.ballPusher.setServoAngle(targetAngle);
+    	Robot.ballPusher.setState(targetState);
     	
     	
     }

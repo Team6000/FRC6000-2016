@@ -62,8 +62,6 @@ public class Robot extends IterativeRobot {
 		} catch (RuntimeException ex) {
 			 DriverStation.reportError("Error instantiating navX-MXP:  " + ex.getMessage(), true);
 		}
-		
-		
      }
 	
 	/**
@@ -110,7 +108,6 @@ public class Robot extends IterativeRobot {
     /**
      * This function is called periodically during autonomous
      */
- 	//NetworkTable table;
  	
     public void autonomousPeriodic() {
         Scheduler.getInstance().run();
@@ -136,29 +133,25 @@ public class Robot extends IterativeRobot {
         // continue until interrupted by another command, remove
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
-        RobotMap.articulatorEncoder.reset();
-        RobotMap.ahrs.reset();
-        
-        
-       
-        		}
+            shooterArticulator.resetDistance();
+            RobotMap.ahrs.reset();
+        }
 
     /**
      * This function is called periodically during operator control
      */
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
-        SmartDashboard.putNumber("Encoder_Rate", RobotMap.articulatorEncoder.getRate());
-        SmartDashboard.putNumber("Encoder_Angle", RobotMap.articulatorEncoder.getDistance());
+        SmartDashboard.putNumber("Encoder_Rate", shooterArticulator.getRate());
+        SmartDashboard.putNumber("Encoder_Angle", shooterArticulator.getDistance());
         SmartDashboard.putNumber("LeftWheelSpeed", RobotMap.leftWheelEncoder.getRate());
         SmartDashboard.putNumber("RightWheelSpeed", RobotMap.rightWheelEncoder.getRate());
-        SmartDashboard.putBoolean("Shooter_Zero", !RobotMap.shooterZero.get());
+        SmartDashboard.putBoolean("Shooter_Zero", shooterArticulator.isZero());
         
        if (RobotMap.ahrs != null) SmartDashboard.putNumber("Robot_Angle", RobotMap.ahrs.getYaw());
        
-       if (!RobotMap.shooterZero.get()) {
-    	   RobotMap.articulatorEncoder.reset();
-       }
+       if (!shooterArticulator.isZero())
+           shooterArticulator.resetDistance();
     }
     
     /**

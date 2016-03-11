@@ -1,5 +1,7 @@
 package org.usfirst.frc.team6000.robot.commands;
 
+import org.usfirst.frc.team6000.robot.subsystems.BallPusher;
+
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
 /**
@@ -8,8 +10,9 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 public class FireSequence extends CommandGroup {
     
     public  FireSequence() {
-    	addSequential(new Fire(90));
-    	addSequential(new Fire(0));
+    	addSequential(new Fire(BallPusher.State.TRIGGERED));
+    	// You could add some stuff to shoot but whatever Seiji can do that later
+    	addSequential(new Fire(BallPusher.State.DEFAULT));
         // Add Commands here:
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());

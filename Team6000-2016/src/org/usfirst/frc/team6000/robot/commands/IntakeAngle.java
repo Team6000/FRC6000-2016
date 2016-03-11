@@ -10,9 +10,9 @@ import edu.wpi.first.wpilibj.command.Command;
  */
 public class IntakeAngle extends Command {
 
-	private boolean isAngled;
+	private Intake.IntakeAngle isAngled;
 	
-    public IntakeAngle(boolean a) {
+    public IntakeAngle(Intake.IntakeAngle a) {
         isAngled = a;
         requires(Robot.intake);
     }

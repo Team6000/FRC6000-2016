@@ -1,8 +1,6 @@
 package org.usfirst.frc.team6000.robot.commands;
 
 import org.usfirst.frc.team6000.robot.Robot;
-
-import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
@@ -20,8 +18,8 @@ public class SetShooterSpeed extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.shooter.setSetpointLeft(rps);
-    	Robot.shooter.setSetpointRight(-rps);
+    	Robot.shooter.setLeft(rps);
+    	Robot.shooter.setRight(-rps);
     }
 
     // Called repeatedly when this Command is scheduled to run

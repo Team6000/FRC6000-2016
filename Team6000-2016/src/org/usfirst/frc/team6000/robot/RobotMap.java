@@ -1,11 +1,7 @@
 package org.usfirst.frc.team6000.robot;
 
 import com.kauailabs.navx.frc.AHRS;
-
-import edu.wpi.first.wpilibj.DigitalInput;
-import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Encoder;
-import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.Victor;
 
 /**
@@ -15,29 +11,37 @@ import edu.wpi.first.wpilibj.Victor;
  * floating around.
  */
 public class RobotMap {
-    // For example to map the left and right motors, you could define the
-    // following variables to use with your drivetrain subsystem.
-    public static Victor leftMotor = new Victor(0);
-    public static Victor rightMotor = new Victor(1);
-    public static Encoder leftWheelEncoder = new Encoder(6,7, true, Encoder.EncodingType.k2X);
-    public static Encoder rightWheelEncoder = new Encoder(8,9, false, Encoder.EncodingType.k2X);
+    // DriveTrain subsystem
+    public static int DRIVE_LEFT = 0;
+    public static int DRIVE_RIGHT = 1;
+    public static int DRIVE_ENCODER_LEFT_A = 6;
+    public static int DRIVE_ENCODER_LEFT_B = 7;
+    public static int DRIVE_ENCODER_RIGHT_A = 8;
+    public static int DRIVE_ENCODER_RIGHT_B = 9;
     
+    // Shooter subsystem
+    public static int SHOOTER_MOTOR_LEFT = 2;
+    public static int SHOOTER_MOTOR_RIGHT = 3;
+    public static int SHOOTER_ENCODER_LEFT_A = 2;
+    public static int SHOOTER_ENCODER_LEFT_B = 3;
+    public static int SHOOTER_ENCODER_RIGHT_A = 4;
+    public static int SHOOTER_ENCODER_RIGHT_B = 5;
     
-    public static Victor leftShooterMotor = new Victor(2);
-    public static Victor rightShooterMotor = new Victor(3);
-    public static Encoder leftShooterEncoder = new Encoder(2, 3, false, Encoder.EncodingType.k2X);
-    public static Encoder rightShooterEncoder = new Encoder(4, 5, true, Encoder.EncodingType.k2X);
+    // ShooterArticulator subsystem
+    public static int SHOOTER_ANGLER = 4;
+    public static int ARTICULATOR_ENCODER_A = 0;
+    public static int ARTICULATOR_ENCODER_B = 1;
+    public static int SHOOTER_ZERO_SWITCH = 0;
     
+    // Intake subsystem
+    public static int INTAKE_WHEELS = 6;
+    public static int INTAKE_PISTON_LEFT_A = 1;
+    public static int INTAKE_PISTON_LEFT_B = 2;
+    public static int INTAKE_PISTON_RIGHT_A = 3;
+    public static int INTAKE_PISTON_RIGHT_B = 4;
     
-    public static Victor shooterAngler = new Victor(4);
-    public static Servo fireServo = new Servo(5);
-    public static Encoder articulatorEncoder = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
-    
-    public static DigitalInput shooterZero = new DigitalInput(10); //NOT THE ISSUE
-    
-    public static DoubleSolenoid intakeAnglerLeft = new DoubleSolenoid(1, 2);
-    public static DoubleSolenoid intakeAnglerRight = new DoubleSolenoid(3, 4);
-    public static Victor intakeWheels = new Victor(6);
+    // BallPusher subsystem
+    public static int FIRE_SERVO = 5;
     
     public static AHRS ahrs;
     
