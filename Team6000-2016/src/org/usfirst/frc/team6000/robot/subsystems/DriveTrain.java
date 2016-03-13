@@ -31,7 +31,7 @@ public class DriveTrain extends Subsystem {
 	    rightMotor = new Victor(RobotMap.DRIVE_RIGHT);
 	    
 	    leftWheelEncoder = new Encoder(RobotMap.DRIVE_ENCODER_LEFT_A, RobotMap.DRIVE_ENCODER_LEFT_B, true, Encoder.EncodingType.k2X);
-	    rightWheelEncoder = new Encoder(RobotMap.DRIVE_ENCODER_RIGHT_A, RobotMap.DRIVE_ENCODER_RIGHT_B, true, Encoder.EncodingType.k2X);
+	    rightWheelEncoder = new Encoder(RobotMap.DRIVE_ENCODER_RIGHT_A, RobotMap.DRIVE_ENCODER_RIGHT_B, false, Encoder.EncodingType.k2X);
 	    
 		robotDrive = new RobotDrive(makeInverted(leftMotor), makeInverted(rightMotor));
 		

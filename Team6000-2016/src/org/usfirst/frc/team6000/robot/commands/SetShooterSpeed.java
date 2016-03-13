@@ -1,6 +1,8 @@
 package org.usfirst.frc.team6000.robot.commands;
 
 import org.usfirst.frc.team6000.robot.Robot;
+import org.usfirst.frc.team6000.robot.subsystems.Intake.IntakeAngle;
+
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
@@ -20,6 +22,9 @@ public class SetShooterSpeed extends Command {
     protected void initialize() {
     	Robot.shooter.setLeft(rps);
     	Robot.shooter.setRight(-rps);
+    	
+    	if(rps < 0)
+    	    Robot.intake.anglePickup(IntakeAngle.UP);
     }
 
     // Called repeatedly when this Command is scheduled to run

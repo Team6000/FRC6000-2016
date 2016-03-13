@@ -31,7 +31,7 @@ public class RobotMap {
     public static int SHOOTER_ANGLER = 4;
     public static int ARTICULATOR_ENCODER_A = 0;
     public static int ARTICULATOR_ENCODER_B = 1;
-    public static int SHOOTER_ZERO_SWITCH = 0;
+    public static int SHOOTER_ZERO_SWITCH = 10;
     
     // Intake subsystem
     public static int INTAKE_WHEELS = 6;

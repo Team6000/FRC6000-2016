@@ -7,6 +7,8 @@ import org.usfirst.frc.team6000.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team6000.robot.subsystems.Shooter;
 import org.usfirst.frc.team6000.robot.subsystems.ShooterArticulator;
 import org.usfirst.frc.team6000.robot.subsystems.Intake;
+import org.usfirst.frc.team6000.robot.subsystems.Intake.IntakeAngle;
+
 import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -41,7 +43,7 @@ public class Robot extends IterativeRobot {
 	
     Command autonomousCommand;
     SendableChooser chooser;
-
+    
     /**
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
@@ -58,6 +60,11 @@ public class Robot extends IterativeRobot {
 		} catch (RuntimeException ex) {
 			 DriverStation.reportError("Error instantiating navX-MXP:  " + ex.getMessage(), true);
 		}
+		
+		chooser = new SendableChooser();
+		
+		//chooser.addDefault("Nothing", null);
+		chooser.addDefault("Drive Forward", new AutoCommand());
      }
 	
 	/**
@@ -83,16 +90,24 @@ public class Robot extends IterativeRobot {
 	 * or additional comparisons to the switch structure below with additional strings & commands.
 	 */
     public void autonomousInit() {
-        autonomousCommand = (Command) chooser.getSelected();
         
-		String autoSelected = SmartDashboard.getString("Auto Selector", "Default");
+        
+		/*tring autoSelected = SmartDashboard.getString("Auto Selector", "Default");
 		switch(autoSelected) {
+		case "Do Nothing":
+		    break;
 		case "Default Auto":
 		default:
 			autonomousCommand = new AutoCommand();
 			break;
-		}
+		}*/
     	
+		//autonomousCommand = (Command) chooser.getSelected();
+		
+        Robot.intake.anglePickup(IntakeAngle.UP);
+        
+        autonomousCommand = new AutoCommand();
+        
     	// schedule the autonomous command (example)
         if (autonomousCommand != null) autonomousCommand.start();
         
@@ -103,6 +118,9 @@ public class Robot extends IterativeRobot {
      */
  	
     public void autonomousPeriodic() {
+        SmartDashboard.putNumber("LeftWheelSpeed", driveTrain.getLeftRate());
+        SmartDashboard.putNumber("RightWheelSpeed", driveTrain.getRightRate());
+        
         Scheduler.getInstance().run();
         
 //        table = NetworkTable.getTable("GRIP/myContoursReport");
@@ -142,7 +160,7 @@ public class Robot extends IterativeRobot {
         
        if (ahrs != null) SmartDashboard.putNumber("Robot_Angle", ahrs.getYaw());
        
-       if (!shooterArticulator.isZero())
+       if (shooterArticulator.isZero())
            shooterArticulator.resetDistance();
     }
     

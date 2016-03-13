@@ -24,11 +24,11 @@ public class Intake extends Subsystem {
   
 	public void anglePickup(IntakeAngle a) {
 		switch (a) {
-		case UP:
+		case DOWN:
 		    intakePistonLeft.set(DoubleSolenoid.Value.kForward);
 		    intakePistonRight.set(DoubleSolenoid.Value.kForward);
 			break;
-		case DOWN:
+		case UP:
 		    intakePistonLeft.set(DoubleSolenoid.Value.kReverse);
 		    intakePistonRight.set(DoubleSolenoid.Value.kReverse);
 			break;
